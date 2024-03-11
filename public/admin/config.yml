@@ -1,5 +1,168 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "public/images"
+public_folder: "/images"
+collections:
+  - name: "landing"
+    label: "Landing page"
+    file: "src/content/index.md"
+    fields:
+      - label: "Secciones"
+        name: "sections"
+        widget: "list"
+        allow_add: true
+        types:
+          - label: "Imagen y texto a pantalla completa"
+            name: "hero"
+            fields:
+              - {label: Imagen o video, name: image, widget: image, hint: Tamaño recomendado 2880x1800px o superior}
+              - {label: Título, name: title, widget: string, hint: Título sobre el video/imagen, required: false}
+          - label: "Título"
+            name: "title"
+            fields:
+              - {label: "Título", name: "title", widget: "string", hint: "Título en fuente grande"}
+          - label: "Subtítulo"
+            name: "subtitle"
+            fields:
+              - {label: "Número", name: "number", widget: "number", hint: Correspondiente a la sección de la web, required: false}
+              - {label: "Subtítulo", name: "subtitle", widget: "string"}
+              - {label: "Texto", name: "text", widget: "string", hint: "El texto que acompaña al subtítulo", required: false}
+              - label: "Ubicación del texto"
+                name: "textLocation"
+                widget: "select"
+                required: false
+                options:
+                  - { label: "A la derecha del subtítulo", value: "right" }
+                  - { label: "Debajo del subtítulo", value: "below" }
+          - label: "Párrafo de texto"
+            name: "text"
+            fields:
+              - {label: "Texto", name: "text", widget: "text"}
+          - label: "Imagen centrada"
+            name: "boxedImage"
+            fields:
+              - {label: Imagen o video, name: image, widget: image, hint: Tamaño recomendado 2200x1400px o superior}
+              - {label: Descripción, name: description, widget: string, hint: Descripción del video/imagen, required: false}
+          - label: "Frase en texto grande"
+            name: "text"
+            fields:
+              - {label: "Frase", name: "text", widget: "text"}
+          - label: "Texto e imagen"
+            name: "textAndImage"
+            fields:
+              - {label: "Número", name: "number", widget: "number", hint: Correspondiente a la sección de la web, required: false}
+              - {label: "Subtítulo", name: "subtitle", widget: "string", required: false}
+              - {label: "Texto", name: "text", widget: "markdown"}
+              - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 1300x1300px o superior, allow_multiple: true}
+              - label: "Proporción de la imagen"
+                name: "proportion"
+                widget: "select"
+                required: false
+                options:
+                  - { label: "Vertical", value: "vertical" }
+                  - { label: "Cuadrada", value: "square" }
+                  - { label: "Horizontal", value: "horizontal" }
+              - label: "Ubicación de la imagen"
+                name: "align"
+                widget: "select"
+                required: false
+                options:
+                  - { label: "Imagen a la izquierda, texto a la derecha", value: "left" }
+                  - { label: "Imagen a la derecha, texto a la izquierda", value: "right" }
+          - label: "Estadísticas"
+            name: "stats"
+            fields:
+              - {label: "Número", name: "number", widget: "number", hint: La estadística propiamente dicha}
+              - {label: "Unidad", name: "unit", widget: "string", hint: "Default: m2", default: "m2", required: false}
+              - {label: "Aclaración", name: "description", widget: "string", hint: "Texto explicativo de la estadística", required: false}
+          - label: "Grilla de imágenes"
+            name: "imageGrid"
+            fields:
+              - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
+              - label: "Proporción de la imagen"
+                name: "proportion"
+                widget: "select"
+                required: false
+                options:
+                  - { label: "Vertical", value: "vertical" }
+                  - { label: "Cuadrada", value: "square" }
+                  - { label: "Horizontal", value: "horizontal" }
+          - label: "Infografía"
+            name: "infographic"
+            fields:
+              - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 1100x1500 o superior}
+              - label: "Contenido"
+                name: "content"
+                widget: "list"
+                summary: '{{fields.title}}'
+                allow_add: true
+                fields:
+                  - {label: Título, name: title, widget: string, required: false}
+                  - {label: Texto, name: text, widget: text}
+          - label: "Mapa"
+            name: "map"
+            fields:
+              - label: "Puntos de interés"
+                name: "interestPoints"
+                widget: "list"
+                summary: '{{fields.title}}'
+                allow_add: true
+                fields:
+                  - {label: Título, name: title, widget: string}
+                  - label: "Ubicación del texto"
+                    name: "location"
+                    widget: "select"
+                    required: false
+                    options:
+                      - { label: "Arriba del marcador", value: "top" }
+                      - { label: "Abajo del marcador", value: "bottom" }
+                      - { label: "A la izquierda del marcador", value: "left" }
+                      - { label: "A la derecha del marcador", value: "right" }
+                  - label: "Tipo"
+                    name: "type"
+                    widget: "select"
+                    required: false
+                    options:
+                      - { label: "Punto de interés", value: "point" }
+                      - { label: "Plaza", value: "square" }
+                      - { label: "Transporte", value: "transport" }
+              - label: "Párrafo de texto"
+                name: "content"
+                widget: "list"
+                summary: '{{fields.title}}'
+                allow_add: true
+                max: 2
+                fields:
+                  - {label: Título, name: title, widget: string, required: false}
+                  - {label: Texto, name: text, widget: text}
+          - label: "Marquesina de texto"
+            name: "marquee"
+            fields:
+              - {label: "Texto", name: "text", widget: "string", hint: "El texto que corre a medida que hacés scroll"}
+          - label: "Virtual staging"
+            name: "virtualStaging"
+            fields:
+              - {label: "Imagen A", name: "firstImage", widget: "image", hint: "La imagen que se muestra a la izquierda"}
+              - {label: "Imagen B", name: "secondImage", widget: "image", hint: "La imagen que se muestra a la derecha"}
+          - label: "Galería de imágenes"
+            name: "imageGallery"
+            fields:
+              - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
+              - label: "Aclaración de imagen"
+                name: "content"
+                widget: "list"
+                summary: '{{fields.title}}'
+                fields:
+                  - {label: Título, name: title, widget: string, required: false}
+                  - {label: Texto, name: text, widget: text}
+          - label: "Listado de unidades"
+            name: "units"
+            fields:
+              - {label: Unidad Funcional, name: uf, widget: number}
+              - {label: Descripción, name: description, widget: string}
+              - {label: Ubicación, name: location, widget: string}
+              - {label: "Disponible?", name: "available", widget: "boolean", default: true}
+              - {label: Superficie cubierta, name: surfaceOne, widget: number}
+              - {label: Superficie semi-cubierta, name: surfaceTwo, widget: number, required: false}
+              - {label: Superficie descubierta, name: surfaceThree, widget: number, required: false}
