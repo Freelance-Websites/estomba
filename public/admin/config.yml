@@ -125,6 +125,7 @@ collections:
                     allow_add: true
                     fields:
                       - {label: Título, name: title, widget: string}
+                      - {label: Coordenadas, name: coordinates, widget: string, hint: "Ejemplo: @-34.5813888,-58.467526"}
                       - label: "Ubicación del texto"
                         name: "location"
                         widget: "select"
