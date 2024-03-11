@@ -49,4 +49,12 @@ sections:
   - type: subtitle
     number: 1
     subtitle: medidas del terreno
+  - type: stats
+    content:
+      - unit: m2
+        number: "17.32"
+        description: Profundidad
+      - unit: m2
+        number: "8.61"
+        description: Ancho
 ---
