@@ -95,4 +95,43 @@ sections:
     text: La zona es de fácil acceso, tiene cercanía al subte B, al ferrocarril
       Urquiza, y a avenidas principales como Alvarez Thomas, Elcano,
       Triunvirato, Los Incas.
+  - type: map
+    interestPoints:
+      - title: L'épi Boulangerie
+        coordinates: "@-34.5813888,-58.467526"
+        location: top
+        type: point
+      - title: RS Esquina
+        coordinates: "@-34.581844,-58.4672053"
+        location: left
+        type: point
+      - title: La Kitchen
+        coordinates: "@-34.5819053,-58.4639676"
+        location: left
+        type: point
+      - title: Almacén La Siesta
+        coordinates: "@-34.5819474,-58.4629212"
+        location: right
+        type: point
+      - title: Tronador – Villa Urquiza
+        coordinates: "@-34.5833518,-58.4647237"
+        location: top
+        type: transport
+      - title: Plaza 25 de Agosto
+        coordinates: "@-34.580799,-58.464198"
+        location: top
+        type: square
+      - title: Plaza San Miguel de Garicoits
+        coordinates: "@-34.580799,-58.464198"
+        location: bottom
+        type: square
+      - title: La Mezzeta
+        coordinates: "@-34.5791207,-58.462299"
+        location: left
+        type: point
+      - title: Les Croquants
+        coordinates: "@-34.5774251,-58.458931"
+        location: right
+        type: point
+    content: []
 ---
