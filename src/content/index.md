@@ -83,4 +83,16 @@ sections:
           unidades de diseños unicos y custom.
         title: configuración a medida
     image: /images/infographic.jpg
+  - type: title
+    title: ubicación
+  - type: text
+    text: El lote se sitúa en un barrio tradicionalmente de baja densidad, con
+      excelente accesibilidad, en el cual predominan las viviendas unifamiliares
+      y algunos edificios de escala baja. A una cuadra y media hay una plaza de
+      una manzana, sin rejas, que conforma un entorno agradable y accesible para
+      una vida tranquila.
+  - type: text
+    text: La zona es de fácil acceso, tiene cercanía al subte B, al ferrocarril
+      Urquiza, y a avenidas principales como Alvarez Thomas, Elcano,
+      Triunvirato, Los Incas.
 ---
