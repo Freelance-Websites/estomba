@@ -48,7 +48,7 @@ collections:
                   - {label: Imagen o video, name: image, widget: image, hint: Tamaño recomendado 2200x1400px o superior}
                   - {label: Descripción, name: description, widget: string, hint: Descripción del video/imagen, required: false}
               - label: "Frase en texto grande"
-                name: "text"
+                name: "phrase"
                 fields:
                   - {label: "Frase", name: "text", widget: "text"}
               - label: "Texto e imagen"
