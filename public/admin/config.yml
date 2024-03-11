@@ -151,7 +151,7 @@ collections:
                     max: 2
                     fields:
                       - {label: Título, name: title, widget: string, required: false}
-                      - {label: Texto, name: text, widget: text}
+                      - {label: Texto, name: text, widget: markdown}
               - label: "Marquesina de texto"
                 name: "marquee"
                 fields:
