@@ -57,4 +57,30 @@ sections:
       - unit: m2
         number: "8.61"
         description: Ancho
+  - type: imageGrid
+    content:
+      - image: /images/grid-1.jpg
+        proportion: vertical
+      - image: /images/grid-2.jpg
+        proportion: square
+      - image: /images/grid-3.jpg
+        proportion: horizontal
+  - type: subtitle
+    number: 1
+    subtitle: amenities y servicios
+  - type: infographic
+    content:
+      - text: Decks con lugar para muebles de exteriores y cantero lineal para pantalla
+          verde con plantas autóctonas, enredaderas y mariposas.
+        title: balcones aterrazados y verde
+      - text: Terraza común arbolada con jardín y propuesta de paisaje. Quincho y
+          solarium en deck con parrilla en terraza.
+        title: amenities
+      - text: Prestaciones individuales. Bajas expensas sin vivienda de encargado. Video
+          vigilancia y control de accesos. Bicicleteros en planta baja.
+        title: servicios eco
+      - text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
+          unidades de diseños unicos y custom.
+        title: configuración a medida
+    image: /images/infographic.jpg
 ---
