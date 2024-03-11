@@ -89,15 +89,20 @@ collections:
               - label: "Grilla de imágenes"
                 name: "imageGrid"
                 fields:
-                  - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
-                  - label: "Proporción de la imagen"
-                    name: "proportion"
-                    widget: "select"
-                    required: false
-                    options:
-                      - { label: "Vertical", value: "vertical" }
-                      - { label: "Cuadrada", value: "square" }
-                      - { label: "Horizontal", value: "horizontal" }
+                  - label: "Contenido"
+                    name: "content"
+                    widget: "list"
+                    allow_add: true
+                    fields:
+                      - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
+                      - label: "Proporción de la imagen"
+                        name: "proportion"
+                        widget: "select"
+                        required: false
+                        options:
+                          - { label: "Vertical", value: "vertical" }
+                          - { label: "Cuadrada", value: "square" }
+                          - { label: "Horizontal", value: "horizontal" }
               - label: "Infografía"
                 name: "infographic"
                 fields:
