@@ -46,4 +46,7 @@ sections:
     image: /images/building-2.jpg
     proportion: square
     align: left
+  - type: subtitle
+    number: 1
+    subtitle: medidas del terreno
 ---
