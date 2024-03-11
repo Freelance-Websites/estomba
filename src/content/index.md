@@ -133,5 +133,17 @@ sections:
         coordinates: "@-34.5774251,-58.458931"
         location: right
         type: point
-    content: []
+    content:
+      - text: |-
+          Subte línea B: Estación Tronador. \
+          Tren línea Urquiza: Estación Federico Lacroze.\
+           Bicisenda: Forest (mano única). \
+          Muy buena conectividad con Acceso Norte.
+        title: transporte–accesibilidad
+      - title: espacios verdes
+        text: |-
+          Plaza 25 de Agosto. A 2 cuadras. Sin rejas.\
+           Plaza Miguel de Garikoitz. A 6 cuadras.\
+           Parque Los Andes. 4 manzanas de espacio verde.\
+           Plaza Elcano. A 5 cuadras. Recientemente abierta.
 ---
