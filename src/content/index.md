@@ -235,4 +235,55 @@ sections:
       - /images/03-2.jpg
     proportion: vertical
     align: right
+  - type: units
+    content:
+      - available: true
+        uf: 101
+        description: Casa urbana.  3 ambientes.
+        location: PB/1er piso.
+        surfaceOne: "76.70"
+        surfaceTwo: "2.15"
+        surfaceThree: "31.44"
+      - available: false
+        uf: 102
+        description: Casa/Estudio.  2 ambientes.
+        location: 1er piso.
+        surfaceOne: "42.99"
+        surfaceTwo: "12.28"
+      - available: true
+        uf: 201
+        description: Piso.  3 ambientes.
+        location: 2do piso.
+        surfaceOne: "82.87"
+        surfaceTwo: "14.84"
+      - available: false
+        uf: 301
+        description: Piso.  3 ambientes.
+        location: 3er piso.
+        surfaceOne: "82.87"
+        surfaceTwo: "14.84"
+      - available: true
+        uf: 401
+        description: Piso.  3 ambientes.
+        location: 4to piso.
+        surfaceOne: "82.87"
+        surfaceTwo: "14.84"
+      - available: false
+        uf: 501
+        description: Piso.  3 ambientes.
+        location: 5to piso.
+        surfaceOne: "82.87"
+        surfaceTwo: "14.84"
+      - available: false
+        uf: 601
+        description: Piso.  3 ambientes.
+        location: 6to piso.
+        surfaceOne: "78.19"
+        surfaceThree: "19.80"
+      - available: false
+        uf: 701
+        description: Duplex con terraza propia.  3 ambientes.
+        location: 7mo piso.
+        surfaceOne: "65.81"
+        surfaceThree: "38.10"
 ---
