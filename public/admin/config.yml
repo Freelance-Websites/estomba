@@ -167,6 +167,7 @@ collections:
                   - label: "Contenido"
                     name: "content"
                     summary: '{{fields.title}}'
+                    widget: "label"
                     fields:
                       - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
                       - {label: Título, name: title, widget: string, required: false}
@@ -177,6 +178,7 @@ collections:
                   - label: "Contenido"
                     name: "content"
                     summary: '{{fields.uf}}'
+                    widget: "label"
                     fields:
                       - {label: Unidad Funcional, name: uf, widget: number}
                       - {label: Descripción, name: description, widget: string}
