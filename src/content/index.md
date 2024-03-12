@@ -286,4 +286,11 @@ sections:
         location: 7mo piso.
         surfaceOne: "65.81"
         surfaceThree: "38.10"
+  - type: title
+    title: contacto
+  - type: subtitle
+    number: 4
+    subtitle: contacto
+    text: Contactate con nosotros para conocer más sobre las unidades disponibles.
+    textLocation: below
 ---
