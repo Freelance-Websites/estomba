@@ -224,4 +224,13 @@ sections:
         text: Piso sexto
       - image: /images/p7mo.jpg
         text: Piso 7mo
+  - type: title
+    title: unidades
+  - type: textAndImage
+    number: 3
+    subtitle: unidades
+    text: Pisos y duplex de 1 y 3 ambientes con balcón terraza.
+    image: /images/03-2.jpg
+    proportion: vertical
+    align: right
 ---
