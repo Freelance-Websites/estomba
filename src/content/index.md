@@ -207,4 +207,21 @@ sections:
   - type: subtitle
     number: 3
     subtitle: planos
+  - type: imageGallery
+    content:
+      - image: /images/ptipo.jpg
+        title: ""
+        text: Planta tipo
+      - image: /images/ptipo-det.jpg
+        text: Planta tipo – Detalle
+      - image: /images/pterraza.jpg
+        text: Planta terraza
+      - image: /images/pterraza-det.jpg
+        text: Planta terraza – Detalle
+      - image: /images/dos-ambientes.jpg
+        text: Dos ambientes
+      - image: /images/p6to.jpg
+        text: Piso sexto
+      - image: /images/p7mo.jpg
+        text: Piso 7mo
 ---
