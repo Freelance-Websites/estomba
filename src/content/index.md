@@ -173,4 +173,24 @@ sections:
   - type: text
     text: "Las cocinas fueron concebidas con mesadas de cuarzo, doble bachas de
       acero inoxidable, anafe y horno por separado. "
+  - type: textAndImage
+    proportion: horizontal
+    align: left
+    text: >-
+      1. Enchapados de madera natural en muros interiores de estar, comedor y
+      frentes de muebles de cocina*.
+
+      2. Ventanas de aluminio anodizado con herrajes de cierre multipunto y DVH*.
+
+      3. Madera en solados* o granítico pulido in situ continuo en todas las unidades.
+
+      4. Piso radiante por agua con caldera dual mural a gas natural en todas las unidades.
+
+      5. Pre instalación de unidades de AA split en todos los ambientes. Energía y caños de refrigeración embutidos.
+
+
+      > \* Especificaciones configurables y opcionales. Podrán suponer costos adicionales.
+    number: 3
+    subtitle: posibilidad de personalización
+    image: /images/units-2.jpg
 ---
