@@ -164,21 +164,24 @@ collections:
               - label: "Galería de imágenes"
                 name: "imageGallery"
                 fields:
-                  - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
-                  - label: "Aclaración de imagen"
+                  - label: "Contenido"
                     name: "content"
-                    widget: "list"
                     summary: '{{fields.title}}'
                     fields:
+                      - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
                       - {label: Título, name: title, widget: string, required: false}
                       - {label: Texto, name: text, widget: text}
               - label: "Listado de unidades"
                 name: "units"
                 fields:
-                  - {label: Unidad Funcional, name: uf, widget: number}
-                  - {label: Descripción, name: description, widget: string}
-                  - {label: Ubicación, name: location, widget: string}
-                  - {label: "Disponible?", name: "available", widget: "boolean", default: true}
-                  - {label: Superficie cubierta, name: surfaceOne, widget: number}
-                  - {label: Superficie semi-cubierta, name: surfaceTwo, widget: number, required: false}
-                  - {label: Superficie descubierta, name: surfaceThree, widget: number, required: false}
+                  - label: "Contenido"
+                    name: "content"
+                    summary: '{{fields.uf}}'
+                    fields:
+                      - {label: Unidad Funcional, name: uf, widget: number}
+                      - {label: Descripción, name: description, widget: string}
+                      - {label: Ubicación, name: location, widget: string}
+                      - {label: "Disponible?", name: "available", widget: "boolean", default: true}
+                      - {label: Superficie cubierta, name: surfaceOne, widget: number}
+                      - {label: Superficie semi-cubierta, name: surfaceTwo, widget: number, required: false}
+                      - {label: Superficie descubierta, name: surfaceThree, widget: number, required: false}
