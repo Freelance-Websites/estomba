@@ -57,7 +57,13 @@ collections:
                   - {label: "Número", name: "number", widget: "number", hint: Correspondiente a la sección de la web, required: false}
                   - {label: "Subtítulo", name: "subtitle", widget: "string", required: false}
                   - {label: "Texto", name: "text", widget: "markdown"}
-                  - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 1300x1300px o superior, allow_multiple: true}
+                  - label: Imagen
+                    name: image
+                    widget: image
+                    hint: Tamaño recomendado 1300x1300px o superior
+                    media_library:
+                      config:
+                        multiple: true
                   - label: "Proporción de la imagen"
                     name: "proportion"
                     widget: "select"
