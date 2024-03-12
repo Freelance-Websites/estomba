@@ -193,4 +193,15 @@ sections:
     number: 3
     subtitle: posibilidad de personalización
     image: /images/units-2.jpg
+  - type: phrase
+    text: múltiples opciones de configuración y personalización
+  - type: virtualStaging
+    firstImage: /images/main-image.jpg
+    secondImage: /images/unit-1.jpg
+  - type: subtitle
+    number: 3
+    subtitle: configuración a medida
+    text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
+      unidades de diseños unicos y custom.
+    textLocation: right
 ---
