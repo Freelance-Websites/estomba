@@ -146,4 +146,31 @@ sections:
            Plaza Miguel de Garikoitz. A 6 cuadras.\
            Parque Los Andes. 4 manzanas de espacio verde.\
            Plaza Elcano. A 5 cuadras. Recientemente abierta.
+  - type: subtitle
+    number: 3
+    subtitle: unidades
+  - type: text
+    text: El edificio cuenta con 8 departamentos. La planta baja tiene al frente dos
+      cocheras (unidades funcionales), acceso peatonal y espacio guarda bicis
+      para todas las unidades.
+  - type: text
+    text: En planta baja y primer piso se organizan en una unidad tipo casa en
+      dúplex con jardín integrado. El resto de las unidades son pisos completos
+      de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado
+      a la calle, y dos dormitorios al contrafrente.
+  - type: text
+    text: En el último piso hay una terraza para uso común con quincho, deck,
+      cubierta verde con pasto, plantas y un árbol, diseñado para pequeños
+      eventos sociales.
+  - type: boxedImage
+    image: /images/unit-1.jpg
+  - type: marquee
+    text: pisos • dúplex • terrazas
+  - type: text
+    text: Los departamentos están equipados con calefacción individual por piso
+      radiante, preinstalación de climatización, pisos de terrazo, griferías FV,
+      grandes paños de vidrio.
+  - type: text
+    text: "Las cocinas fueron concebidas con mesadas de cuarzo, doble bachas de
+      acero inoxidable, anafe y horno por separado. "
 ---
