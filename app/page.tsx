@@ -1,4 +1,6 @@
 import { attributes } from '@/content/index.md';
+import Loader from '@/components/Loader';
+import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 
 interface Section {
@@ -10,6 +12,8 @@ interface Section {
 export default function Home() {
   return (
    <main>
+    <Header />
+    <Loader />
     {attributes.sections.map((section: Section, index: Number) => {
       switch(section.type) {
         case 'hero':
@@ -17,6 +21,7 @@ export default function Home() {
             <Hero
               image={section.image || ""}
               title={section.title || "estomba"}
+              key={`${index}`}
             />
           )
         default:
