@@ -11,7 +11,9 @@ interface Section {
 
 export default function Home() {
   return (
-   <main>
+   <main
+    className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12"
+   >
     <Header />
     <Loader />
     {attributes.sections.map((section: Section, index: Number) => {

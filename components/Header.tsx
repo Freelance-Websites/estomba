@@ -1,8 +1,10 @@
 const Header = () => {
   return (
-    <header>
+    <header
+      className="fixed -top[120px] p-4 md:p-8 w-full col-span-full z-10"
+    >
       <nav
-        className="fixed -top-[120px] w-full p-4 flex items-center z-10"
+        className="flex items-center"
       >
         <div className="nav-logo flex-1">
           <a

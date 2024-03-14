@@ -1,9 +1,13 @@
 "use client";
 
+import { useState } from 'react';
+import { GeistMono } from 'geist/font/mono';
 import { gsap } from "gsap";
 import CountUp from 'react-countup';
 
 const Loader = () => {
+  const [isLogoVisible, setIsLogoVisible] = useState(false);
+
   const animateText = () => {
     setTimeout(() => {
       gsap.to(".counter span", {
@@ -35,7 +39,7 @@ const Loader = () => {
         delay: 4,
       });
   
-      gsap.to(".hero img", {
+      gsap.to(".hero div", {
         scale: 1,
         ease: "power3.inOut",
         duration: 2,
@@ -43,18 +47,23 @@ const Loader = () => {
       });
   
       gsap.to(".hero-copy h1 span", {
-        top: "0",
-        stagger: 0.1,
+        opacity: "1",
         ease: "power3.inOut",
         duration: 2,
         delay: 4,
       });
   
-      gsap.to("nav", {
+      gsap.to("header", {
         top: "0",
         ease: "power3.inOut",
         duration: 2,
         delay: 4,
+      });
+      
+      gsap.to(".overlay", {
+        display: 'none',
+        duration: 0.1,
+        delay: 6,
       });
     }, 300);
   }
@@ -63,7 +72,7 @@ const Loader = () => {
     <div
       className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-[1000] overlay bg-white"
     >
-      <div className="images w-5/12">
+      <div className="w-full">
         <div
           className="relative my-4 text"
           style={{
@@ -71,7 +80,7 @@ const Loader = () => {
           }}
         >
           <div
-            className="counter text-black text-[120px] text-center uppercase leading-none"
+            className={`counter text-black text-4xl md:text-7xl lg:text-9xl text-center font-light leading-none ${GeistMono.className}`}
           >
             <CountUp
               start={0}
@@ -80,12 +89,13 @@ const Loader = () => {
               suffix="%"
               delay={Math.random()}
               onEnd={() => animateText()}
+              onStart={() => setIsLogoVisible(true)}
             />
           </div>
           <div
-            className="logo absolute top-0 left-1/2 -translate-x-1/2"
+            className={`logo absolute top-0 left-1/2 -translate-x-1/2 text-black ${isLogoVisible ? 'opacity-100' : 'opacity-0'}`}
           >
-            <p className="leading-none text-[120px] text-center uppercase">estomba</p>
+            <p className="leading-none text-4xl md:text-7xl lg:text-9xl text-center font-light">estomba</p>
           </div>
         </div>
       </div>
