@@ -15,7 +15,7 @@ export default function Home() {
     className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12"
    >
     <Header />
-    <Loader />
+    {/* <Loader /> */}
     {attributes.sections.map((section: Section, index: Number) => {
       switch(section.type) {
         case 'hero':
