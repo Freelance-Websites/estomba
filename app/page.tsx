@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from 'react';
-
+//@ts-ignore
 import { attributes } from '@/content/index.md';
 
 import Loader from '@/components/Loader';
@@ -9,6 +9,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Subtitle from '@/components/Subtitle';
 import Text from '@/components/Text';
+import BoxedImage from '@/components/BoxedImage';
 
 interface Section {
   type: string;
@@ -18,6 +19,7 @@ interface Section {
   number?: string;
   subtitle: string;
   textLocation?: string;
+  alt?: string;
 }
 
 export default function Home() {
@@ -74,6 +76,13 @@ export default function Home() {
               <Text
                 key={`${index}`}
                 text={section.text || ""}
+              />
+            )
+            case 'boxedImage':
+              return (
+              <BoxedImage
+                key={`${index}`}
+                image={section.image || ""}
               />
             )
         default:
