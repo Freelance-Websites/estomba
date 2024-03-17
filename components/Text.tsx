@@ -11,6 +11,7 @@ const Text = ({ text }: Text) => {
       <p
         className="text-black text-xl md:text-3xl lg:text-4xl mb-6"
         data-scroll
+        data-scroll-speed="0.5"
       >
         {text}
       </p>

@@ -7,6 +7,7 @@ import { attributes } from '@/content/index.md';
 import Loader from '@/components/Loader';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Subtitle from '@/components/Subtitle';
 import Text from '@/components/Text';
 
 interface Section {
@@ -14,12 +15,16 @@ interface Section {
   image?: string;
   title?: string;
   text?: string;
+  number?: string;
+  subtitle: string;
+  textLocation?: string;
 }
 
 export default function Home() {
   useEffect(() => {
     import("locomotive-scroll").then((locomotiveModule) => {
       let scroll = new locomotiveModule.default({
+          //@ts-ignore
           el: document.querySelector("[data-scroll-container]"),
           smooth: true,
           smoothMobile: true,
@@ -54,13 +59,23 @@ export default function Home() {
               key={`${index}`}
               />
             )
+            case 'subtitle':
+              return (
+              <Subtitle
+                key={`${index}`}
+                number={section.number || "1"}
+                subtitle={section.subtitle}
+                text={section.text}
+                textLocation={section.textLocation}
+              />
+            )
             case 'text':
               return (
               <Text
                 key={`${index}`}
                 text={section.text || ""}
               />
-          )
+            )
         default:
           break;
       }

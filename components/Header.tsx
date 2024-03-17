@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
 import { GeistMono } from 'geist/font/mono';
