@@ -10,6 +10,7 @@ import Hero from '@/components/Hero';
 import Subtitle from '@/components/Subtitle';
 import Text from '@/components/Text';
 import BoxedImage from '@/components/BoxedImage';
+import Phrase from '@/components/Phrase';
 
 interface Section {
   type: string;
@@ -20,6 +21,7 @@ interface Section {
   subtitle: string;
   textLocation?: string;
   alt?: string;
+  content?: [];
 }
 
 export default function Home() {
@@ -46,7 +48,7 @@ export default function Home() {
 
   return (
    <main
-    className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 bg-white"
+    className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-y-8 md:gap-y-16 lg:gap-y-24 xl:gap-y-32 bg-white"
     data-scroll-container
    >
     <Header />
@@ -75,7 +77,7 @@ export default function Home() {
               return (
               <Text
                 key={`${index}`}
-                text={section.text || ""}
+                content={section.content || []}
               />
             )
             case 'boxedImage':
@@ -83,6 +85,13 @@ export default function Home() {
               <BoxedImage
                 key={`${index}`}
                 image={section.image || ""}
+              />
+            )
+            case 'phrase':
+              return (
+              <Phrase
+                key={`${index}`}
+                text={section.text || ""}
               />
             )
         default:

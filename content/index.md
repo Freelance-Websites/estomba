@@ -3,23 +3,13 @@ sections:
   - type: hero
     image: /images/hero-wip.jpg
     title: estomba
-  - type: subtitle
-    number: 1
-    subtitle: edificio
   - type: text
-    text: Una propuesta de inversión, que combina un edificio de vivienda de pocas
-      unidades en armonía con un barrio de baja densidad, donde predominan las
-      casas.
-  - type: text
-    text: El edificio cuenta con 8 departamentos. Planta baja y primer piso se
-      organizan en una unidad tipo casa en dúplex con jardín integrado. El resto
-      de las unidades son pisos completos de tres ambientes, con estar-comedor,
-      cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al
-      contrafrente.
-  - type: text
-    text: En el último piso hay una terraza para uso común con quincho, deck,
-      cubierta verde con pasto, plantas y un árbol, diseñado para pequeños
-      eventos sociales.
+    content:
+      - text: Una propuesta de inversión, que combina un edificio de vivienda de pocas unidades en armonía con un barrio de baja densidad, donde predominan las casas.
+        number: 1
+        subtitle: edificio
+      - text: El edificio cuenta con 8 departamentos. Planta baja y primer piso se organizan en una unidad tipo casa en dúplex con jardín integrado. El resto de las unidades son pisos completos de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al contrafrente.
+      - text: El edificio cuenta con 8 departamentos. Planta baja y primer piso se organizan en una unidad tipo casa en dúplex con jardín integrado. El resto de las unidades son pisos completos de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al contrafrente.
   - type: boxedImage
     image: /images/main-image.jpg
   - type: phrase
@@ -86,15 +76,9 @@ sections:
   - type: title
     title: ubicación
   - type: text
-    text: El lote se sitúa en un barrio tradicionalmente de baja densidad, con
-      excelente accesibilidad, en el cual predominan las viviendas unifamiliares
-      y algunos edificios de escala baja. A una cuadra y media hay una plaza de
-      una manzana, sin rejas, que conforma un entorno agradable y accesible para
-      una vida tranquila.
-  - type: text
-    text: La zona es de fácil acceso, tiene cercanía al subte B, al ferrocarril
-      Urquiza, y a avenidas principales como Alvarez Thomas, Elcano,
-      Triunvirato, Los Incas.
+    content:
+      - text: El lote se sitúa en un barrio tradicionalmente de baja densidad, con excelente accesibilidad, en el cual predominan las viviendas unifamiliares y algunos edificios de escala baja. A una cuadra y media hay una plaza de una manzana, sin rejas, que conforma un entorno agradable y accesible para una vida tranquila.
+      - text: La zona es de fácil acceso, tiene cercanía al subte B, al ferrocarril Urquiza, y a avenidas principales como Alvarez Thomas, Elcano, Triunvirato, Los Incas.
   - type: map
     interestPoints:
       - title: L'épi Boulangerie
@@ -146,33 +130,21 @@ sections:
            Plaza Miguel de Garikoitz. A 6 cuadras.\
            Parque Los Andes. 4 manzanas de espacio verde.\
            Plaza Elcano. A 5 cuadras. Recientemente abierta.
-  - type: subtitle
-    number: 3
-    subtitle: unidades
   - type: text
-    text: El edificio cuenta con 8 departamentos. La planta baja tiene al frente dos
-      cocheras (unidades funcionales), acceso peatonal y espacio guarda bicis
-      para todas las unidades.
-  - type: text
-    text: En planta baja y primer piso se organizan en una unidad tipo casa en
-      dúplex con jardín integrado. El resto de las unidades son pisos completos
-      de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado
-      a la calle, y dos dormitorios al contrafrente.
-  - type: text
-    text: En el último piso hay una terraza para uso común con quincho, deck,
-      cubierta verde con pasto, plantas y un árbol, diseñado para pequeños
-      eventos sociales.
+    content:
+      - number: 3
+        subtitle: unidades
+        text: El edificio cuenta con 8 departamentos. La planta baja tiene al frente dos cocheras (unidades funcionales), acceso peatonal y espacio guarda bicis para todas las unidades.
+      - text: En planta baja y primer piso se organizan en una unidad tipo casa en dúplex con jardín integrado. El resto de las unidades son pisos completos de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al contrafrente.
+      - text: En el último piso hay una terraza para uso común con quincho, deck, cubierta verde con pasto, plantas y un árbol, diseñado para pequeños eventos sociales.
   - type: boxedImage
     image: /images/unit-1.jpg
   - type: marquee
     text: pisos • dúplex • terrazas
   - type: text
-    text: Los departamentos están equipados con calefacción individual por piso
-      radiante, preinstalación de climatización, pisos de terrazo, griferías FV,
-      grandes paños de vidrio.
-  - type: text
-    text: "Las cocinas fueron concebidas con mesadas de cuarzo, doble bachas de
-      acero inoxidable, anafe y horno por separado. "
+    content:
+      - text: Los departamentos están equipados con calefacción individual por piso radiante, preinstalación de climatización, pisos de terrazo, griferías FV, grandes paños de vidrio.
+      - text: "Las cocinas fueron concebidas con mesadas de cuarzo, doble bachas de acero inoxidable, anafe y horno por separado. "
   - type: textAndImage
     proportion: horizontal
     align: left

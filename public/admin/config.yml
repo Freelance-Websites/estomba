@@ -41,7 +41,15 @@ collections:
               - label: "Párrafo de texto"
                 name: "text"
                 fields:
-                  - {label: "Texto", name: "text", widget: "text"}
+                  - label: "Contenido"
+                    name: "content"
+                    widget: "list"
+                    summary: '{{fields.text}}'
+                    allow_add: true
+                    fields:
+                      - {label: "Número", name: "number", widget: "number", hint: Correspondiente a la sección de la web, required: false}
+                      - {label: "Subtítulo", name: "subtitle", widget: "string", required: false}
+                      - {label: "Texto", name: "text", widget: "text"}
               - label: "Imagen centrada"
                 name: "boxedImage"
                 fields:
