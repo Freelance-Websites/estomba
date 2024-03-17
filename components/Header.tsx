@@ -69,6 +69,7 @@ const Header = () => {
     <>
       <header
         className="fixed -top[120px] p-4 md:p-8 w-full col-span-full z-10"
+        data-scroll-section
       >
         <nav
           className="flex items-center"

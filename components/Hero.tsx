@@ -29,7 +29,10 @@ const Hero = ({ image, title}: Hero) => {
   }, []);
   
   return (
-    <section className="col-span-full">
+    <section
+      className="col-span-full"
+      data-scroll-section
+    >
       <div className="relative hero overflow-hidden">
         <div className="scale-[2] w-screen h-screen">
           {isImage ?
