@@ -9,8 +9,9 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Subtitle from '@/components/Subtitle';
 import Text from '@/components/Text';
-import BoxedImage from '@/components/BoxedImage';
 import Phrase from '@/components/Phrase';
+import BoxedImage from '@/components/BoxedImage';
+import TextAndImage from '@/components/TextAndImage';
 
 interface Section {
   type: string;
@@ -21,7 +22,10 @@ interface Section {
   subtitle: string;
   textLocation?: string;
   alt?: string;
+  proportion?: string;
+  align?: string;
   content?: [];
+  images?: [];
 }
 
 export default function Home() {
@@ -92,6 +96,19 @@ export default function Home() {
               <Phrase
                 key={`${index}`}
                 text={section.text || ""}
+              />
+            )
+            case 'textAndImage':
+              return (
+              <TextAndImage
+                key={`${index}`}
+                //@ts-ignore
+                images={section.image || []}
+                number={section.number}
+                subtitle={section.subtitle}
+                text={section.text}
+                proportion={section.proportion}
+                align={section.align}
               />
             )
         default:

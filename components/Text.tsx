@@ -13,7 +13,7 @@ interface Item {
 const Text = ({ content }: Text) => {
   return (
     <section
-      className="col-span-full container mx-auto px-4 md:px-8"
+      className="col-span-full lg:col-span-10 lg:col-start-2"
       data-scroll-section
     >
       {content.map((item: Item, index) =>

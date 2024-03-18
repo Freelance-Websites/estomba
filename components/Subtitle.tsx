@@ -10,7 +10,7 @@ interface Subtitle {
 const Subtitle = ({ number, subtitle, text, textLocation }: Subtitle) => {
   return (
     <section
-      className="col-span-full container mx-auto px-4 md:px-8"
+      className="col-span-full lg:col-span-10 lg:col-start-2"
       data-scroll-section
     >
       <div

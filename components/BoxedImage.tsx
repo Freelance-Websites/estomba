@@ -8,7 +8,7 @@ interface BoxedImage {
 const BoxedImage = ({ image, alt }: BoxedImage) => {
   return (
     <section
-      className="col-span-full lg:col-span-10 lg:col-start-2 container mx-auto px-4 md:px-8 relative"
+      className="col-span-full lg:col-span-8 lg:col-start-3 relative"
       data-scroll-section
     >
       <Image

@@ -27,13 +27,15 @@ sections:
 
 
       En los últimos pisos, los retiros obligatorios organizan balcones y terrazas diferenciadas. Una de ellas para uso común con quincho, deck y terraza verde, pasto, plantas y un árbol para sombra. La otra privada perteneciente a la unidad del remate.
-    image: /images/building-1.jpg
+    image:
+      - /images/building-1.jpg
     proportion: vertical
     align: right
   - type: textAndImage
     text: Los servicios comunes y circulaciones fueron proyectados priorizando la
       economía de recursos y el fácil mantenimiento de lo construído.
-    image: /images/building-2.jpg
+    image:
+      - /images/building-2.jpg
     proportion: square
     align: left
   - type: subtitle
@@ -164,7 +166,8 @@ sections:
       > \* Especificaciones configurables y opcionales. Podrán suponer costos adicionales.
     number: 3
     subtitle: posibilidad de personalización
-    image: /images/units-2.jpg
+    image:
+      - /images/units-2.jpg
   - type: phrase
     text: múltiples opciones de configuración y personalización
   - type: virtualStaging
