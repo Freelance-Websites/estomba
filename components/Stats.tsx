@@ -13,8 +13,6 @@ interface Stat {
 }
 
 const Stats = ({ stats }: StatsProps) => {
-  const dontPurgeThese = ['lg:col-span-1', 'lg:col-span-2', 'lg:col-span-3', 'lg:col-span-4', 'lg:col-span-5', 'lg:col-span-6', 'lg:col-span-10']
-
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.75,
@@ -22,18 +20,18 @@ const Stats = ({ stats }: StatsProps) => {
   
   return (
     <section
-      className="col-span-full lg:col-span-10 lg:col-start-2 px-4 md:px-0"
+      className="col-span-full lg:col-span-10 lg:col-start-2 px-4 px-8 lg:px-0"
       data-scroll-section
     >
       <ul
-        className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-10 gap-4 md:gap-8 lg:gap-12"
+        className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-10 gap-4 md:gap-8 lg:gap-12 border-t border-[#D9D9D9] pt-6 md:pt-8"
         ref={ref}
       >
         {stats.map((stat: Stat, index: Number) => (
           <li
             key={`${index}`}
             className={`
-              col-span-full lg:col-span-${10 / stats.length}
+              col-span-full lg:col-span-5
               flex gap-4
             `}
           >
@@ -44,7 +42,7 @@ const Stats = ({ stats }: StatsProps) => {
               delay={Math.random()}
               decimal={"."}
               decimals={2}
-              className={`text-black text-7xl md:text-9xl text-center font-extralight leading-none ${GeistMono.className}`}
+              className={`text-black text-6xl md:text-9xl text-center font-extralight leading-none ${GeistMono.className}`}
             />
             <div
               className="flex flex-col"

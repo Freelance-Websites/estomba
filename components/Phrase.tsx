@@ -5,7 +5,7 @@ interface Phrase {
 const Phrase = ({ text }: Phrase) => {
   return (
     <section
-      className="col-span-full lg:col-span-10 lg:col-start-2 px-4 md:px-0"
+      className="col-span-full lg:col-span-10 lg:col-start-2 px-4 px-8 lg:px-0"
       data-scroll-section
     >
       <p
