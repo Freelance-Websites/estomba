@@ -1,0 +1,7 @@
+.ImageOpacity {
+  @apply opacity-0 transition-opacity delay-500 duration-500 ease-in-out;
+}
+
+.ImageOpacity:global(.is-inview) {
+  @apply opacity-100;
+}

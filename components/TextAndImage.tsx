@@ -1,6 +1,8 @@
 import { GeistMono } from 'geist/font/mono';
 import Image from "next/image";
 
+import styles from './ScrollAnimations.module.css';
+
 interface TextAndImage {
   images: [];
   number?: string;
@@ -72,7 +74,7 @@ const TextAndImage = ({
             data-scroll-speed="0.5"
             src={image}
             alt={subtitle || "Estomba"}
-            className="w-full h-full"
+            className={`${styles.ImageOpacity} w-full h-full`}
             width={1200}
             height={800}
             quality={80}

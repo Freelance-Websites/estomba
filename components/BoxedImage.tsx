@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import styles from './ScrollAnimations.module.css';
+
 interface BoxedImage {
   image: string;
   alt?: string;
@@ -16,7 +18,7 @@ const BoxedImage = ({ image, alt }: BoxedImage) => {
         data-scroll-speed="1"
         src={image}
         alt={alt || "Estomba"}
-        className="w-full h-full"
+        className={`${styles.ImageOpacity} w-full h-full`}
         width={1200}
         height={800}
         quality={80}
