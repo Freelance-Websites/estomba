@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from 'react';
-//@ts-ignore
+
 import { attributes } from '@/content/index.md';
 
 import Loader from '@/components/Loader';
@@ -25,20 +25,19 @@ interface Section {
   proportion?: string;
   align?: string;
   content?: [];
-  images?: [];
+  images?: string[];
 }
 
 export default function Home() {
   useEffect(() => {
     import("locomotive-scroll").then((locomotiveModule) => {
-      let scroll = new locomotiveModule.default({
-          //@ts-ignore
-          el: document.querySelector("[data-scroll-container]"),
-          smooth: true,
-          smoothMobile: true,
-          resetNativeScroll: true,
-          inertia: 0.75,
-       });
+      const scrollContainer = document.querySelector("[data-scroll-container]");
+      if (scrollContainer instanceof HTMLElement) {
+        let scroll = new locomotiveModule.default({
+            el: scrollContainer,
+            smooth: true,
+            resetNativeScroll: true,
+         });
        
        setTimeout(function () {
           scroll.init();
@@ -47,6 +46,7 @@ export default function Home() {
         return () => {
           if (scroll) scroll.destroy();
         }
+       }
     });
   }, []);
 
@@ -101,14 +101,13 @@ export default function Home() {
             case 'textAndImage':
               return (
               <TextAndImage
-                key={`${index}`}
-                //@ts-ignore
-                images={section.image || []}
-                number={section.number}
-                subtitle={section.subtitle}
-                text={section.text}
-                proportion={section.proportion}
-                align={section.align}
+              key={`${index}`}
+              images={section.images || []}
+              number={section.number}
+              subtitle={section.subtitle}
+              text={section.text}
+              proportion={section.proportion}
+              align={section.align}
               />
             )
         default:

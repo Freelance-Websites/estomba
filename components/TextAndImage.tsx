@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from './ScrollAnimations.module.css';
 
 interface TextAndImage {
-  images: [];
+  images: string[];
   number?: string;
   subtitle?: string;
   text?: string;
