@@ -10,9 +10,10 @@ import Hero from '@/components/Hero';
 import Subtitle from '@/components/Subtitle';
 import Text from '@/components/Text';
 import Phrase from '@/components/Phrase';
+import Stats from '@/components/Stats';
 import BoxedImage from '@/components/BoxedImage';
 import TextAndImage from '@/components/TextAndImage';
-import Stats from '@/components/Stats';
+import ImageGrid from '@/components/ImageGrid';
 
 interface Section {
   stats: never[];
@@ -117,6 +118,13 @@ export default function Home() {
               <Stats
                 key={`${index}`}
                 stats={section.stats} 
+              />
+            )
+            case 'imageGrid':
+              return (
+              <ImageGrid
+                key={`${index}`}
+                content={section.content || []} 
               />
             )
         default:

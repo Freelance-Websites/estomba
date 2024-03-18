@@ -24,14 +24,14 @@ const Stats = ({ stats }: StatsProps) => {
       data-scroll-section
     >
       <ul
-        className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-10 gap-4 md:gap-8 lg:gap-12 border-t border-[#D9D9D9] pt-6 md:pt-8"
+        className="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-10 gap-4 md:gap-8 lg:gap-12 border-t border-[#D9D9D9] pt-6 md:pt-8"
         ref={ref}
       >
         {stats.map((stat: Stat, index: Number) => (
           <li
             key={`${index}`}
             className={`
-              col-span-full lg:col-span-5
+              col-span-full md:col-span-4 lg:col-span-5
               flex gap-4
             `}
           >
@@ -42,7 +42,7 @@ const Stats = ({ stats }: StatsProps) => {
               delay={Math.random()}
               decimal={"."}
               decimals={2}
-              className={`text-black text-6xl md:text-9xl text-center font-extralight leading-none ${GeistMono.className}`}
+              className={`text-black text-6xl lg:text-8xl xl:text-9xl text-center font-extralight leading-none ${GeistMono.className}`}
             />
             <div
               className="flex flex-col"
