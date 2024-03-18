@@ -12,8 +12,10 @@ import Text from '@/components/Text';
 import Phrase from '@/components/Phrase';
 import BoxedImage from '@/components/BoxedImage';
 import TextAndImage from '@/components/TextAndImage';
+import Stats from '@/components/Stats';
 
 interface Section {
+  stats: never[];
   type: string;
   image?: string;
   title?: string;
@@ -101,13 +103,20 @@ export default function Home() {
             case 'textAndImage':
               return (
               <TextAndImage
-              key={`${index}`}
-              images={section.images || []}
-              number={section.number}
-              subtitle={section.subtitle}
-              text={section.text}
-              proportion={section.proportion}
-              align={section.align}
+                key={`${index}`}
+                images={section.images || []}
+                number={section.number}
+                subtitle={section.subtitle}
+                text={section.text}
+                proportion={section.proportion}
+                align={section.align}
+                />
+            )
+            case 'stats':
+              return (
+              <Stats
+                key={`${index}`}
+                stats={section.stats} 
               />
             )
         default:

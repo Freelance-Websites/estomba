@@ -27,14 +27,14 @@ sections:
 
 
       En los últimos pisos, los retiros obligatorios organizan balcones y terrazas diferenciadas. Una de ellas para uso común con quincho, deck y terraza verde, pasto, plantas y un árbol para sombra. La otra privada perteneciente a la unidad del remate.
-    image:
+    images:
       - /images/building-1.jpg
     proportion: vertical
     align: right
   - type: textAndImage
     text: Los servicios comunes y circulaciones fueron proyectados priorizando la
       economía de recursos y el fácil mantenimiento de lo construído.
-    image:
+    images:
       - /images/building-2.jpg
     proportion: square
     align: left
@@ -42,7 +42,7 @@ sections:
     number: 1
     subtitle: medidas del terreno
   - type: stats
-    content:
+    stats:
       - unit: m2
         number: "17.32"
         description: Profundidad
@@ -166,7 +166,7 @@ sections:
       > \* Especificaciones configurables y opcionales. Podrán suponer costos adicionales.
     number: 3
     subtitle: posibilidad de personalización
-    image:
+    images:
       - /images/units-2.jpg
   - type: phrase
     text: múltiples opciones de configuración y personalización
@@ -205,7 +205,7 @@ sections:
     number: 3
     subtitle: unidades
     text: Pisos y duplex de 1 y 3 ambientes con balcón terraza.
-    image:
+    images:
       - /images/03-1.jpg
       - /images/03-2.jpg
     proportion: vertical

@@ -22,7 +22,7 @@ const TextAndImage = ({
 }: TextAndImage) => {
   return (
     <section
-      className="col-span-full lg:col-span-10 lg:col-start-2 grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-x-8"
+      className="col-span-full lg:col-span-10 lg:col-start-2 grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-x-8 px-4 md:px-0"
       data-scroll-section
     >
       {text &&
@@ -38,7 +38,7 @@ const TextAndImage = ({
         >
           {subtitle &&
             <div
-              className="flex items-baseline gap-8 md:gap-24"
+              className="flex items-baseline gap-8 md:gap-24 mb-4 md:mb-0"
             >
               <span
                 className={`${GeistMono.className} text-black font-semibold text-xs`}

@@ -91,7 +91,7 @@ collections:
                 name: "stats"
                 fields:
                   - label: "Contenido"
-                    name: "content"
+                    name: "stats"
                     widget: "list"
                     summary: '{{fields.title}}'
                     allow_add: true
