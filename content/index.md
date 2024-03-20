@@ -25,4 +25,19 @@ sections:
     image: /images/main-image.jpg
   - type: phrase
     text: grilla de hormigón modula la fachada filtra las visuales
+  - type: textAndImage
+    number: 1
+    subtitle: características constructivas
+    text: >-
+      En la parte posterior del lote se calza el núcleo de circulación
+      coincidente con el patio vertical, estableciendo un diálogo lleno-vacío.
+      Esta configuración permite despejar la planta y dejarla franca al uso
+      residencial.
+
+
+      La lógica proyectual adoptada combina la posibilidad de densificación y las cualidades barriales, para proponer una volumetría que pisa uniforme la franja edificable de la manzana, en la cual se alojan los pisos de vivienda.
+    image:
+      - /images/building-1.jpg
+    proportion: vertical
+    align: right
 ---
