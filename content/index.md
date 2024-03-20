@@ -89,8 +89,14 @@ sections:
     title: ubicación
   - type: text
     content:
-      - text: El lote se sitúa en un barrio tradicionalmente de baja densidad, con excelente accesibilidad, en el cual predominan las viviendas unifamiliares y algunos edificios de escala baja. A una cuadra y media hay una plaza de una manzana, sin rejas, que conforma un entorno agradable y accesible para una vida tranquila.
-      - text: La zona es de fácil acceso, tiene cercanía al subte B, al ferrocarril Urquiza, y a avenidas principales como Alvarez Thomas, Elcano, Triunvirato, Los Incas.
+      - text: El lote se sitúa en un barrio tradicionalmente de baja densidad, con
+          excelente accesibilidad, en el cual predominan las viviendas
+          unifamiliares y algunos edificios de escala baja. A una cuadra y media
+          hay una plaza de una manzana, sin rejas, que conforma un entorno
+          agradable y accesible para una vida tranquila.
+      - text: La zona es de fácil acceso, tiene cercanía al subte B, al ferrocarril
+          Urquiza, y a avenidas principales como Alvarez Thomas, Elcano,
+          Triunvirato, Los Incas.
   - type: map
     interestPoints:
       - title: L'épi Boulangerie
@@ -146,17 +152,27 @@ sections:
     content:
       - number: 3
         subtitle: unidades
-        text: El edificio cuenta con 8 departamentos. La planta baja tiene al frente dos cocheras (unidades funcionales), acceso peatonal y espacio guarda bicis para todas las unidades.
-      - text: En planta baja y primer piso se organizan en una unidad tipo casa en dúplex con jardín integrado. El resto de las unidades son pisos completos de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al contrafrente.
-      - text: En el último piso hay una terraza para uso común con quincho, deck, cubierta verde con pasto, plantas y un árbol, diseñado para pequeños eventos sociales.
+        text: El edificio cuenta con 8 departamentos. La planta baja tiene al frente dos
+          cocheras (unidades funcionales), acceso peatonal y espacio guarda
+          bicis para todas las unidades.
+      - text: En planta baja y primer piso se organizan en una unidad tipo casa en
+          dúplex con jardín integrado. El resto de las unidades son pisos
+          completos de tres ambientes, con estar-comedor, cocina-lavadero y
+          balcón aterrazado a la calle, y dos dormitorios al contrafrente.
+      - text: En el último piso hay una terraza para uso común con quincho, deck,
+          cubierta verde con pasto, plantas y un árbol, diseñado para pequeños
+          eventos sociales.
   - type: boxedImage
     image: /images/unit-1.jpg
   - type: marquee
     text: pisos • dúplex • terrazas
   - type: text
     content:
-      - text: Los departamentos están equipados con calefacción individual por piso radiante, preinstalación de climatización, pisos de terrazo, griferías FV, grandes paños de vidrio.
-      - text: "Las cocinas fueron concebidas con mesadas de cuarzo, doble bachas de acero inoxidable, anafe y horno por separado. "
+      - text: Los departamentos están equipados con calefacción individual por piso
+          radiante, preinstalación de climatización, pisos de terrazo, griferías
+          FV, grandes paños de vidrio.
+      - text: "Las cocinas fueron concebidas con mesadas de cuarzo, doble bachas de
+          acero inoxidable, anafe y horno por separado. "
   - type: textAndImage
     proportion: horizontal
     align: left
@@ -177,6 +193,8 @@ sections:
     number: 3
     subtitle: posibilidad de personalización
     images:
+      - /images/units-2.jpg
+    image:
       - /images/units-2.jpg
   - type: phrase
     text: múltiples opciones de configuración y personalización
@@ -220,6 +238,9 @@ sections:
       - /images/03-2.jpg
     proportion: vertical
     align: right
+    image:
+      - /images/03-1.jpg
+      - /images/03-2.jpg
   - type: units
     content:
       - available: true
