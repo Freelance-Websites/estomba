@@ -95,7 +95,6 @@ collections:
                     widget: "list"
                     summary: '{{fields.title}}'
                     allow_add: true
-                    max: 2
                     fields:
                       - {label: "Número", name: "number", widget: "string", hint: La estadística propiamente dicha}
                       - {label: "Unidad", name: "unit", widget: "string", hint: "Default: m2", default: "m2", required: false}
