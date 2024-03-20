@@ -40,4 +40,11 @@ sections:
       - /images/building-1.jpg
     proportion: vertical
     align: right
+  - type: textAndImage
+    text: Los servicios comunes y circulaciones fueron proyectados priorizando la
+      economía de recursos y el fácil mantenimiento de lo construído.
+    image:
+      - /images/building-2.jpg
+    proportion: square
+    align: left
 ---
