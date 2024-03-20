@@ -55,7 +55,7 @@ const Header = () => {
       },
       "<",
     );
-  }, [])
+  }, [tl]);
 
   const openMenu = () => {
     tl.play();
