@@ -192,8 +192,6 @@ sections:
       > \* Especificaciones configurables y opcionales. Podrán suponer costos adicionales.
     number: 3
     subtitle: posibilidad de personalización
-    images:
-      - /images/units-2.jpg
     image:
       - /images/units-2.jpg
   - type: phrase
@@ -233,9 +231,6 @@ sections:
     number: 3
     subtitle: unidades
     text: Pisos y duplex de 3 ambientes con balcón terraza.
-    images:
-      - /images/03-1.jpg
-      - /images/03-2.jpg
     proportion: vertical
     align: right
     image:

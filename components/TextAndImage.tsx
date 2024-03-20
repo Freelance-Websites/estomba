@@ -1,6 +1,9 @@
 import { GeistMono } from 'geist/font/mono';
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+import ReactMarkdown from 'react-markdown';
+
+import styles from './TextAndImage.module.css';
 
 interface TextAndImage {
   images: string[];
@@ -23,6 +26,8 @@ const TextAndImage = ({
     triggerOnce: true,
     threshold: 0.75,
   });
+
+  console.log(text)
 
   return (
     <section
@@ -56,11 +61,11 @@ const TextAndImage = ({
               </h2>
             </div>
           }
-          <p
-            className="text-black text-base"
+          <div
+            className={`text-black text-base grid gap-2 md:gap-4 ${styles.RichText}`}
           >
-            {text}
-          </p>
+            <ReactMarkdown>{text}</ReactMarkdown>
+          </div>
         </div>
       }
       <div

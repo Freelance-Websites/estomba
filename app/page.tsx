@@ -106,7 +106,7 @@ export default function Home() {
               return (
               <TextAndImage
                 key={`${index}`}
-                images={section.images || []}
+                images={section.image || []}
                 number={section.number}
                 subtitle={section.subtitle}
                 text={section.text}
