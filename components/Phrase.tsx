@@ -36,7 +36,7 @@ const Phrase = ({ text }: Phrase) => {
       {splittedText.map((part, index) =>
         <p
           className={`
-            text-black text-4xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[6vw] font-light
+            text-black text-4xl md:text-7xl lg:text-8xl xl:text-9xl xl:tracking-tight 2xl:text-[6vw] font-light
             transform transition ease-in-out duration-500 delay-200
             ${index === 1 && !inView ? 'translate-x-full opacity-0'
               : index === 0 && !inView || index === 2 && !inView ? '-translate-x-full opacity-0'
