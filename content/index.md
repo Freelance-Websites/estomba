@@ -15,7 +15,7 @@ sections:
   - type: boxedImage
     image: /images/main-image.jpg
   - type: phrase
-    text: grilla de hormigón que modula la fachada
+    text: grilla de hormigón modula la fachada y filtra las visuales
   - type: textAndImage
     number: 1
     subtitle: características constructivas
@@ -199,7 +199,7 @@ sections:
   - type: textAndImage
     number: 3
     subtitle: unidades
-    text: Pisos y duplex de 1 y 3 ambientes con balcón terraza.
+    text: Pisos y duplex de 3 ambientes con balcón terraza.
     images:
       - /images/03-1.jpg
       - /images/03-2.jpg
@@ -209,7 +209,7 @@ sections:
     content:
       - available: true
         uf: 101
-        description: Casa urbana.  3 ambientes.
+        description: PH con jardín.  3 ambientes.
         location: PB/1er piso.
         surfaceOne: "76.70"
         surfaceTwo: "2.15"
