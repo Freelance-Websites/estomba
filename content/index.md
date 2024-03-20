@@ -16,22 +16,6 @@ sections:
     image: /images/main-image.jpg
   - type: phrase
     text: grilla de hormigón modula la fachada y filtra las visuales
-  - type: textAndImage
-    number: 1
-    subtitle: características constructivas
-    text: >-
-      La lógica proyectual adoptada combina la posibilidad de densificación y las cualidades barriales, para proponer una volumetría que pisa la uniforme la franja edificable de la manzana, en la cual se alojan los pisos de vivienda.
-    images:
-      - /images/building-1.jpg
-    proportion: vertical
-    align: right
-  - type: textAndImage
-    text: Los servicios comunes y circulaciones fueron proyectados priorizando la
-      economía de recursos y el fácil mantenimiento de lo construído.
-    images:
-      - /images/building-2.jpg
-    proportion: square
-    align: left
   - type: stats
     stats:
       - number: "8"
@@ -142,27 +126,6 @@ sections:
     content:
       - text: Los departamentos están equipados con calefacción individual por piso radiante, preinstalación de climatización, pisos de terrazo, griferías FV, grandes paños de vidrio.
       - text: "Las cocinas fueron concebidas con mesadas de cuarzo, doble bachas de acero inoxidable, anafe y horno por separado. "
-  - type: textAndImage
-    proportion: horizontal
-    align: left
-    text: >-
-      1. Enchapados de madera natural en muros interiores de estar, comedor y
-      frentes de muebles de cocina*.
-
-      2. Ventanas de aluminio anodizado con herrajes de cierre multipunto y DVH*.
-
-      3. Madera en solados* o granítico pulido in situ continuo en todas las unidades.
-
-      4. Piso radiante por agua con caldera dual mural a gas natural en todas las unidades.
-
-      5. Pre instalación de unidades de AA split en todos los ambientes. Energía y caños de refrigeración embutidos.
-
-
-      > \* Especificaciones configurables y opcionales. Podrán suponer costos adicionales.
-    number: 3
-    subtitle: posibilidad de personalización
-    images:
-      - /images/units-2.jpg
   - type: phrase
     text: múltiples opciones de configuración y personalización
   - type: virtualStaging
@@ -196,15 +159,6 @@ sections:
         text: Piso 7mo
   - type: title
     title: unidades
-  - type: textAndImage
-    number: 3
-    subtitle: unidades
-    text: Pisos y duplex de 3 ambientes con balcón terraza.
-    images:
-      - /images/03-1.jpg
-      - /images/03-2.jpg
-    proportion: vertical
-    align: right
   - type: units
     content:
       - available: true
