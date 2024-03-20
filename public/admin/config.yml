@@ -69,6 +69,7 @@ collections:
                     name: image
                     widget: image
                     hint: Tamaño recomendado 1300x1300px o superior
+                    required: false
                     media_library:
                       config:
                         multiple: true
