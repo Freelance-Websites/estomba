@@ -14,6 +14,7 @@ import Stats from '@/components/Stats';
 import BoxedImage from '@/components/BoxedImage';
 import TextAndImage from '@/components/TextAndImage';
 import ImageGrid from '@/components/ImageGrid';
+import Infographic from '@/components/Infographic';
 
 interface Section {
   stats: never[];
@@ -125,6 +126,14 @@ export default function Home() {
               <ImageGrid
                 key={`${index}`}
                 content={section.content || []} 
+              />
+            )
+            case 'infographic':
+              return (
+              <Infographic
+                key={`${index}`}
+                content={section.content || []} 
+                image={section.image || ""} 
               />
             )
         default:
