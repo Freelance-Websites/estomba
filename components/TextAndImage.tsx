@@ -1,7 +1,6 @@
 import { GeistMono } from 'geist/font/mono';
 import Image from "next/image";
-
-import styles from './ScrollAnimations.module.css';
+import { useInView } from "react-intersection-observer";
 
 interface TextAndImage {
   images: string[];
@@ -20,6 +19,11 @@ const TextAndImage = ({
   proportion,
   align
 }: TextAndImage) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.75,
+  });
+
   return (
     <section
       className="col-span-full lg:col-span-10 lg:col-start-2 grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-x-8 px-4 px-8 lg:px-0"
@@ -67,14 +71,19 @@ const TextAndImage = ({
           : 'col-span-full lg:col-span-10 lg:col-start-2'}
           ${align === 'right' ? `lg:col-start-7` : 'md:row-start-1'}
         `}
+        ref={ref}
       >
         {images.map((image, index) =>
           <Image
-            data-scroll
-            data-scroll-speed="0.5"
             src={image}
             alt={subtitle || "Estomba"}
-            className={`${styles.ImageOpacity} w-full h-full`}
+            className={`
+              transform w-full h-full transition ease-in-out duration-500
+              ${align === 'right' && !inView ? 'translate-x-full opacity-0'
+                : align === 'left' && !inView ? '-translate-x-full opacity-0'
+                : 'translate-x-0 opacity-1'
+              }
+            `}
             width={1200}
             height={800}
             quality={80}

@@ -1,6 +1,5 @@
 import Image from "next/image";
-
-import styles from './ScrollAnimations.module.css';
+import { useInView } from "react-intersection-observer";
 
 interface BoxedImage {
   image: string;
@@ -8,17 +7,21 @@ interface BoxedImage {
 }
 
 const BoxedImage = ({ image, alt }: BoxedImage) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.75,
+  });
+
   return (
     <section
       className="col-span-full lg:col-span-8 lg:col-start-3 relative"
+      ref={ref}
       data-scroll-section
     >
       <Image
-        data-scroll
-        data-scroll-speed="1"
         src={image}
         alt={alt || "Estomba"}
-        className={`${styles.ImageOpacity} w-full h-full`}
+        className={`${inView ? 'opacity-1' : 'opacity-0'} transition-opacity delay-200 duration-500 ease-in-out w-full h-full`}
         width={1200}
         height={800}
         quality={80}

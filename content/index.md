@@ -8,8 +8,10 @@ sections:
       - text: Una propuesta de inversión, que combina un edificio de vivienda de pocas unidades en armonía con un barrio de baja densidad, donde predominan las casas.
         number: 1
         subtitle: edificio
-      - text: El edificio cuenta con 8 departamentos. Planta baja y primer piso se organizan en una unidad tipo casa en dúplex con jardín integrado. El resto de las unidades son pisos completos de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al contrafrente.
-      - text: El edificio cuenta con 8 departamentos. Planta baja y primer piso se organizan en una unidad tipo casa en dúplex con jardín integrado. El resto de las unidades son pisos completos de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al contrafrente.
+      - text: El lote se sitúa en un barrio tradicionalmente de baja densidad, en el cual predominan las viviendas unifamiliares, algunos edificios de escala baja, y a continuación, sin rejas, la plaza que ocupa una manzana.
+      - text: En el frente, una grilla de hormigón modula la fachada, filtra las visuales y contiene los espacios semi cubiertos, cuyo desarrollo es al interior de la línea municipal.
+      - text: De medianera a medianera se desarrollan canteros lineales que actúan de buffer verde, por un lado, para mantener lo privado de cara a lo público, y por otro lado para responder a la necesidad de expansión semicubierta.
+      - text: En los últimos pisos, los retiros obligatorios organizan balcones y una para uso común con quincho, deck y terraza verde, pasto, plantas y un árbol de sombra.
   - type: boxedImage
     image: /images/main-image.jpg
   - type: phrase
@@ -18,15 +20,7 @@ sections:
     number: 1
     subtitle: características constructivas
     text: >-
-      En el frente, una grilla de hormigón modula la fachada, filtra las
-      visuales y contiene los espacios semi cubiertos, cuyo desarrollo es al
-      interior de la línea municipal. De medianera a medianera se desarrollan
-      canteros lineales que actúan de buffer verde, por un lado, para mantener
-      lo privado de cara a lo público, y por otro lado para responder a la
-      necesidad de expansión semicubierta de la pos pandemia.
-
-
-      En los últimos pisos, los retiros obligatorios organizan balcones y terrazas diferenciadas. Una de ellas para uso común con quincho, deck y terraza verde, pasto, plantas y un árbol para sombra. La otra privada perteneciente a la unidad del remate.
+      La lógica proyectual adoptada combina la posibilidad de densificación y las cualidades barriales, para proponer una volumetría que pisa la uniforme la franja edificable de la manzana, en la cual se alojan los pisos de vivienda.
     images:
       - /images/building-1.jpg
     proportion: vertical
@@ -38,17 +32,18 @@ sections:
       - /images/building-2.jpg
     proportion: square
     align: left
-  - type: subtitle
-    number: 1
-    subtitle: medidas del terreno
   - type: stats
     stats:
-      - unit: m2
-        number: "17.32"
-        description: Profundidad
-      - unit: m2
-        number: "8.61"
-        description: Ancho
+      - number: "8"
+        description: Unidades
+      - number: "5"
+        description: Pisos
+      - number: "1"
+        description: Estudio
+      - number: "1"
+        description: PH
+      - number: "1"
+        description: Dúplex
   - type: imageGrid
     content:
       - image: /images/grid-1.jpg
