@@ -21,4 +21,8 @@ sections:
       - text: En los últimos pisos, los retiros obligatorios organizan balcones y una
           para uso común con quincho, deck y terraza verde, pasto, plantas y un
           árbol de sombra.
+  - type: boxedImage
+    image: /images/main-image.jpg
+  - type: phrase
+    text: grilla de hormigón modula la fachada filtra las visuales
 ---
