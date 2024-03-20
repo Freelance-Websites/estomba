@@ -9,7 +9,7 @@ collections:
     files:
       - name: "landing"
         label: "Landing page"
-        file: "src/content/index.md"
+        file: "content/index.md"
         fields:
           - label: "Secciones"
             name: "sections"
