@@ -40,8 +40,6 @@ const TextAndImage = ({
             ${subtitle ? 'justify-between' : 'justify-end'}
             ${align === 'left' && `md:col-start-7 lg:col-start-9`}
           `}
-          data-scroll
-          data-scroll-speed="0.5"
         >
           {subtitle &&
             <div

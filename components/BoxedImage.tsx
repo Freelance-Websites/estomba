@@ -25,6 +25,8 @@ const BoxedImage = ({ image, alt }: BoxedImage) => {
         width={1200}
         height={800}
         quality={80}
+        data-scroll
+        data-scroll-speed="1"
       />
     </section>
   )
