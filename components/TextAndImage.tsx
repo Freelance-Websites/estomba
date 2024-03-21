@@ -29,7 +29,7 @@ const TextAndImage = ({
 
   return (
     <section
-      className="col-span-full lg:col-span-10 lg:col-start-2 grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-x-8 px-4 px-8 lg:px-0"
+      className="col-span-full lg:col-span-10 lg:col-start-2 grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-y-6 lg:gap-y-0 gap-x-8 px-4 px-8 lg:px-0"
       data-scroll-section
     >
       {text &&
@@ -38,7 +38,7 @@ const TextAndImage = ({
             col-span-full md:col-span-4
             flex flex-col
             ${subtitle ? 'justify-between' : 'justify-end'}
-            ${align === 'left' && `md:col-start-7 lg:col-start-9`}
+            ${align === 'left' && `lg:col-start-7 lg:col-start-9`}
           `}
         >
           {subtitle &&

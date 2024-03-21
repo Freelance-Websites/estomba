@@ -24,7 +24,7 @@ const Stats = ({ stats }: StatsProps) => {
       data-scroll-section
     >
       <ul
-        className="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-10 gap-4 md:gap-8 lg:gap-12"
+        className="grid grid-cols-1 md:grid-cols-9 lg:grid-cols-10 gap-4 md:gap-8 lg:gap-12"
         ref={ref}
       >
         {stats.map((stat: Stat, index: Number) => (
