@@ -17,7 +17,7 @@ const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
   const ref = useRef();
   const { ref: inViewRef, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.75,
+    threshold: 0.25,
   });
 
   const setRefs = useCallback(
