@@ -23,7 +23,7 @@ const Title = ({ title }: TitleProps) => {
               key={index}
               ref={ref}
               className={`
-                transform w-full h-full transition ease-in-out duration-500 block
+                transform w-full h-full transition ease-in-out duration-500 block text-center
                 ${!inView ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-1'}
               `}
               style={{
