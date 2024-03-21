@@ -9,7 +9,7 @@ interface MarqueeProps {
 const Marquee = ({ text, scrollDirection }: MarqueeProps) => {
   return (
     <section
-      className="col-span-full lg:col-span-10 lg:col-start-2 px-4 px-8 lg:px-0 w-screen"
+      className="col-span-full lg:col-span-10 lg:col-start-2 w-screen"
       style={{
         marginLeft: 'calc(50% - 50vw)'
       }}
