@@ -16,6 +16,7 @@ import BoxedImage from '@/components/BoxedImage';
 import TextAndImage from '@/components/TextAndImage';
 import ImageGrid from '@/components/ImageGrid';
 import Infographic from '@/components/Infographic';
+import Map from '@/components/Map';
 
 interface Section {
   stats: never[];
@@ -30,6 +31,7 @@ interface Section {
   proportion?: string;
   align?: string;
   content?: [];
+  interestPoints?: [];
   images?: string[];
 }
 
@@ -142,6 +144,14 @@ export default function Home() {
               <Title
                 key={`${index}`}
                 title={section.title || ""} 
+              />
+            )
+            case 'map':
+              return (
+              <Map
+                key={`${index}`}
+                interestPoints={section.interestPoints || []}
+                content={section.content || []}
               />
             )
         default:

@@ -100,41 +100,45 @@ sections:
   - type: map
     interestPoints:
       - title: L'épi Boulangerie
-        coordinates: "@-34.5813888,-58.467526"
+        coordinates: "-34.58144177258623, -58.466828649187335"
         location: top
         type: point
       - title: RS Esquina
-        coordinates: "@-34.581844,-58.4672053"
+        coordinates: "-34.581649641783386, -58.464662589527606"
         location: left
         type: point
       - title: La Kitchen
-        coordinates: "@-34.5819053,-58.4639676"
-        location: left
+        coordinates: "-34.58176447389863, -58.46142248128788"
+        location: top
         type: point
       - title: Almacén La Siesta
-        coordinates: "@-34.5819474,-58.4629212"
-        location: right
+        coordinates: "-34.58173537555355, -58.46035703185715"
+        location: bottom
         type: point
       - title: Tronador – Villa Urquiza
-        coordinates: "@-34.5833518,-58.4647237"
+        coordinates: "-34.58415354156799, -58.46648532645994"
         location: top
         type: transport
       - title: Plaza 25 de Agosto
-        coordinates: "@-34.580799,-58.464198"
+        coordinates: "-34.58003054340053, -58.4619556283066"
         location: top
         type: square
       - title: Plaza San Miguel de Garicoits
-        coordinates: "@-34.580799,-58.464198"
-        location: bottom
+        coordinates: "-34.57782228944845, -58.458288730470386"
+        location: left
         type: square
       - title: La Mezzeta
-        coordinates: "@-34.5791207,-58.462299"
+        coordinates: "-34.57799483684215, -58.46085105633195"
         location: left
         type: point
       - title: Les Croquants
-        coordinates: "@-34.5774251,-58.458931"
+        coordinates: "-34.57724839888193, -58.456259543505006"
         location: right
         type: point
+      - title: estomba 1046
+        coordinates: "-34.58123860717787, -58.46498328952765"
+        location: left
+        type: building
     content:
       - text: |-
           Subte línea B: Estación Tronador.\
