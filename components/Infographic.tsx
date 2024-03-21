@@ -21,14 +21,14 @@ const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
 
   return (
     <section
-      className="col-span-full lg:col-span-10 lg:col-start-2 grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-12 gap-x-4 lg:gap-x-8 px-8 lg:px-0 gap-y-6 lg:gap-y-0"
+      className="col-span-full lg:col-span-10 lg:col-start-2 grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-4 xl:grid-rows-5 gap-x-4 lg:gap-x-8 px-8 lg:px-0 gap-y-6 lg:gap-y-0"
       data-scroll-section
     >
       {content.map((item: Content, index: number) => {
         const itemRef = useRef(null);
         const { ref, inView } = useInView({
           triggerOnce: true,
-          threshold: 0.75,
+          threshold: 0.25,
         });
 
         const animateDottedLine = (ref: React.RefObject<HTMLDivElement>) => {

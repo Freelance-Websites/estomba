@@ -15,7 +15,7 @@ interface Stat {
 const Stats = ({ stats }: StatsProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.75,
+    threshold: 0.25,
   });
   
   return (

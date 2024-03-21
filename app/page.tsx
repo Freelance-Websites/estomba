@@ -7,6 +7,7 @@ import { attributes } from '@/content/index.md';
 import Loader from '@/components/Loader';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Title from '@/components/Title';
 import Subtitle from '@/components/Subtitle';
 import Text from '@/components/Text';
 import Phrase from '@/components/Phrase';
@@ -43,7 +44,7 @@ export default function Home() {
             resetNativeScroll: true,
          });
        
-       setTimeout(function () {
+        setTimeout(function () {
           scroll.init();
         }, 400);
 
@@ -106,7 +107,7 @@ export default function Home() {
               return (
               <TextAndImage
                 key={`${index}`}
-                images={section.image ? [section.image] : []}
+                images={section.image ? [section.image].flat() : []}
                 number={section.number}
                 subtitle={section.subtitle}
                 text={section.text}
@@ -134,6 +135,13 @@ export default function Home() {
                 key={`${index}`}
                 content={section.content || []} 
                 image={section.image || ""} 
+              />
+            )
+            case 'title':
+              return (
+              <Title
+                key={`${index}`}
+                title={section.title || ""} 
               />
             )
         default:

@@ -11,8 +11,6 @@ interface ImageGrid {
 }
 
 const ImageGrid = ({ content }: GridProps) => {
-  
-
   return (
     <section
       className="col-span-full lg:col-span-10 lg:col-start-2 relative grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-x-4 md:gap-x-8 gap-y-8 md:gap-y-16 lg:gap-y-24"
@@ -21,7 +19,7 @@ const ImageGrid = ({ content }: GridProps) => {
       {content.map((item: ImageGrid, index: Number) => {
         const { ref, inView } = useInView({
           triggerOnce: true,
-          threshold: 0.75,
+          threshold: 0.25,
         });
 
         return (

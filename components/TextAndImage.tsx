@@ -24,10 +24,8 @@ const TextAndImage = ({
 }: TextAndImage) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.75,
+    threshold: 0.25,
   });
-
-  console.log(text)
 
   return (
     <section
