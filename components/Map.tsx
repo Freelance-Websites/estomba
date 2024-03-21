@@ -53,7 +53,7 @@ const Map = ({ interestPoints, content }: MapProps) => {
     >
         {isLoaded && (
           <GoogleMap
-            mapContainerStyle={{ height: "70vh", width: "100%", position: 'relative' }}
+            mapContainerStyle={{ height: "600px", width: "100%", position: 'relative' }}
             center={center}
             zoom={16}
             onUnmount={onUnmount}
