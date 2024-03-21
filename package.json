@@ -22,7 +22,8 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18",
     "react-intersection-observer": "^9.8.1",
-    "react-markdown": "^9.0.1"
+    "react-markdown": "^9.0.1",
+    "react-marquee-text": "^1.0.3"
   },
   "devDependencies": {
     "@types/node": "^20",

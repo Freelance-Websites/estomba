@@ -169,7 +169,7 @@ sections:
   - type: boxedImage
     image: /images/unit-1.jpg
   - type: marquee
-    text: pisos • dúplex • terrazas
+    text: pisos • dúplex • terrazas • 
   - type: text
     content:
       - text: Los departamentos están equipados con calefacción individual por piso

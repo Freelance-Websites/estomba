@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import { attributes } from '@/content/index.md';
 
@@ -11,6 +11,7 @@ import Title from '@/components/Title';
 import Subtitle from '@/components/Subtitle';
 import Text from '@/components/Text';
 import Phrase from '@/components/Phrase';
+import Marquee from '@/components/Marquee';
 import Stats from '@/components/Stats';
 import BoxedImage from '@/components/BoxedImage';
 import TextAndImage from '@/components/TextAndImage';
@@ -36,6 +37,8 @@ interface Section {
 }
 
 export default function Home() {
+  const [scrollDirection, setScrollDirection] = useState("down");
+
   useEffect(() => {
     import("locomotive-scroll").then((locomotiveModule) => {
       const scrollContainer = document.querySelector("[data-scroll-container]");
@@ -44,11 +47,17 @@ export default function Home() {
             el: scrollContainer,
             smooth: true,
             resetNativeScroll: true,
+            getDirection: true,
          });
        
         setTimeout(function () {
           scroll.init();
         }, 400);
+
+        scroll.on('scroll', (instance) => {
+          //@ts-ignore
+          setScrollDirection(instance.direction);
+        });
 
         return () => {
           if (scroll) scroll.destroy();
@@ -154,6 +163,14 @@ export default function Home() {
                 content={section.content || []}
               />
             )
+            case 'marquee':
+              return (
+                <Marquee
+                  key={`${index}`}
+                  text={section.text || ""}
+                  scrollDirection={scrollDirection}
+                />
+              )
         default:
           break;
       }

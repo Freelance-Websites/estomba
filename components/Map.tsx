@@ -35,14 +35,14 @@ const Map = ({ interestPoints, content }: MapProps) => {
     lng: -58.46498328952765
   };
 
-  const onLoad = useCallback(function callback(map) {
+  const onLoad = useCallback(function callback(map: any) {
     const bounds = new window.google.maps.LatLngBounds(center);
     map.fitBounds(bounds);
 
     setMap(map);
   }, []);
 
-  const onUnmount = useCallback(function callback(map) {
+  const onUnmount = useCallback(function callback(map: any) {
     setMap(null);
   }, []);
 
