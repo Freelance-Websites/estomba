@@ -71,7 +71,7 @@ const TextAndImage = ({
           ${proportion === 'vertical' && images.length <= 1 || proportion === 'square' ? 'col-span-full md:col-span-4 lg:col-span-6'
           : proportion === 'vertical' && images.length > 1 ? 'col-span-full md:col-span-4 lg:col-span-4'
           // Horizontal proportion
-          : 'col-span-full lg:col-span-10 lg:col-start-2'}
+          : 'col-span-full lg:col-span-8'}
           ${align === 'right' ? `lg:col-start-7` : 'md:row-start-1'}
         `}
         ref={ref}

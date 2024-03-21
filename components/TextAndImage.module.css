@@ -3,7 +3,7 @@
 }
 
 .RichText ol {
-    @apply list-decimal;
+    @apply list-decimal pl-5;
 }
 
 .RichText li {
