@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useCallback, ReactNode } from 'react';
 import Image from 'next/image';
 import { useInView } from "react-intersection-observer";
 
@@ -14,10 +14,21 @@ interface InfographicProps {
 
 const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
   const [isAnimationCompleted, setIsAnimationCompleted] = useState(false);
-  const { ref, inView } = useInView({
+  const ref = useRef();
+  const { ref: inViewRef, inView } = useInView({
     triggerOnce: true,
     threshold: 0.75,
   });
+
+  const setRefs = useCallback(
+    (node: any) => {
+      // Ref's from useRef needs to have the node assigned to `current`
+      ref.current = node;
+      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
+      inViewRef(node);
+    },
+    [inViewRef],
+  );
 
   return (
     <section
@@ -25,11 +36,7 @@ const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
       data-scroll-section
     >
       {content.map((item: Content, index: number) => {
-        const itemRef = useRef(null);
-        const { ref, inView } = useInView({
-          triggerOnce: true,
-          threshold: 0.25,
-        });
+        const lineRef = useRef(null);
 
         const animateDottedLine = (ref: React.RefObject<HTMLDivElement>) => {
           const line = ref.current;
@@ -59,7 +66,7 @@ const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
               }
               ${index % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-10'}
             `}
-            ref={ref}
+            ref={setRefs}
           >
             <div
               className={`
@@ -68,9 +75,9 @@ const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
                 overflow-x-hidden
                 transition-all ease-in-out duration-500 
                 ${index % 2 === 0 ? 'left-full ml-2' : 'right-full mr-2'}
-                ${inView && animateDottedLine(itemRef)}
+                ${inView && animateDottedLine(lineRef)}
               `}
-              ref={itemRef}
+              ref={lineRef}
             >
               <svg xmlns="http://www.w3.org/2000/svg">
                 <g id="dotted-line" className="dotted-line">
@@ -131,7 +138,6 @@ const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
       )}
       <div
         className='col-span-full lg:col-span-6 lg:col-start-4 lg:transform lg:absolute lg:left-1/2 lg:-translate-x-1/2 xl:translate-x-0 xl:left-0 order-first lg:order-none'
-        ref={ref}
       >
         <Image
           src={image}
@@ -142,7 +148,6 @@ const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
           className={`
             w-full md:w-96 md:mx-auto lg:w-full h-full
             transition-opacity ease-in-out duration-500
-            ${inView ? 'opacity-1' : 'opacity-0'}
           `}
         />
       </div>
