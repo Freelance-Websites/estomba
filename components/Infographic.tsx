@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback, ReactNode } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import Image from 'next/image';
 import { useInView } from "react-intersection-observer";
 
