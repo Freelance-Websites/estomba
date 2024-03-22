@@ -1,3 +1,4 @@
+import { Dispatch } from 'react';
 import { GeistMono } from "geist/font/mono";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -11,8 +12,6 @@ interface Unit {
   surfaceTwo?: string;
   surfaceThree?: string;
 }
-
-import { Dispatch } from 'react';
 
 interface UnitProps {
   content: Array<Unit>;
@@ -30,6 +29,11 @@ const Units = ({ content, setSelectedUnit }: UnitProps) => {
 
     const contactLink = document.querySelector('a[href="#contacto"]') as HTMLAnchorElement;
     if (contactLink) contactLink.click();
+
+    // Alternative approach, worse experience
+    // localStorage.setItem('selectedUnit', unit.uf.toString());
+    // window.location.href = '#form';
+    // window.location.reload();
   };
 
   return (
@@ -37,6 +41,7 @@ const Units = ({ content, setSelectedUnit }: UnitProps) => {
       className="col-span-full lg:col-span-10 lg:col-start-2 px-8 lg:px-0"
       data-scroll-section
       ref={ref}
+      id="unidades"
     >
       <ul
         className={`${inView ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500 ease-in-out`}

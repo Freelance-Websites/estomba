@@ -59,7 +59,8 @@ const Header = () => {
         >
           <div className="nav-logo flex-1">
             <a
-              href="/"
+              href="#top"
+              data-scroll-to=""
               className="transition ease-in-out duration-100 hover:opacity-80"
             >
               <Image
@@ -101,7 +102,8 @@ export const MobileMenu = ({ closeMenu }: MobileMenuProps) => (
     >
       <div className="menu-logo flex-1">
         <a
-          href="/"
+          href="#top"
+          data-scroll-to=""
           className="transition ease-in-out duration-100 hover:opacity-80"
         >
           <Image
