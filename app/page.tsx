@@ -59,6 +59,9 @@ export default function Home() {
             smooth: true,
             resetNativeScroll: false,
             getDirection: true,
+            smartphone: {
+              smooth: true,
+            },
          });
        
         setTimeout(function () {
