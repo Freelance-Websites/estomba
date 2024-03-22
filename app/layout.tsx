@@ -16,7 +16,7 @@ export default function RootLayout({
         <meta name="title" content="Estomba" />
         <meta name="description" content="Una propuesta de inversión, que combina un edificio de vivienda de pocas unidades en armonía con un barrio de baja densidad, donde predominan las casas." />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased selection:bg-black selection:text-white">{children}</body>
     </html>
   );
 }
