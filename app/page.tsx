@@ -193,6 +193,10 @@ export default function Home() {
                   key={`${index}`}
                   content={section.content || []}
                   images={section.content?.map((slide: any) => slide.image) || []}
+                  number={section.number || "1"}
+                  subtitle={section.subtitle}
+                  text={section.text}
+                  textLocation={section.textLocation}
                 />
               )
         default:

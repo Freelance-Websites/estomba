@@ -1,5 +1,5 @@
+import { GeistMono } from 'geist/font/mono';
 import ReactCompareImage from 'react-compare-image';
-import Subtitle from './Subtitle';
 
 interface VirtualStagingProps {
   firstImage: string;
@@ -25,12 +25,26 @@ const VirtualStaging = ({ firstImage, secondImage, number, subtitle, text, textL
         sliderPositionPercentage={0.25}
       />
       {subtitle &&
-        <div className='mt-4 md:mt-6 lg:mt-8'>
-          <Subtitle
-            number={number}
-            subtitle={subtitle}
-            text={text}
-          />
+        <div
+          className="flex items-baseline gap-8 md:gap-24 my-6 md:my-8 lg:my-12"
+          data-scroll
+          data-scroll-speed="0.5"
+        >
+          <span
+            className={`${GeistMono.className} text-black font-semibold text-xs`}
+          >
+            [0{number}]
+          </span>
+          <h2
+            className="font-medium flex-1 text-xl text-black"
+          >
+            {subtitle}
+          </h2>
+          {text &&
+            <p className="text-black md:max-w-xs">
+              {text}
+            </p>
+          }
         </div>
       }
     </section>

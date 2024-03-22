@@ -187,6 +187,16 @@ collections:
               - label: "Galería de imágenes"
                 name: "imageGallery"
                 fields:
+                  - {label: "Número", name: "number", widget: "number", hint: Correspondiente a la sección de la web, required: false}
+                  - {label: "Subtítulo", name: "subtitle", widget: "string", required: false}
+                  - {label: "Texto", name: "text", widget: "string", hint: "El texto que acompaña al subtítulo", required: false}
+                  - label: "Ubicación del texto"
+                    name: "textLocation"
+                    widget: "select"
+                    required: false
+                    options:
+                      - { label: "A la derecha del subtítulo", value: "right" }
+                      - { label: "Debajo del subtítulo", value: "below" }
                   - label: "Contenido"
                     name: "content"
                     summary: '{{fields.title}}'

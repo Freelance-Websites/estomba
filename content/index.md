@@ -208,10 +208,9 @@ sections:
     text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
       unidades de diseños unicos y custom.
     textLocation: right
-  - type: subtitle
+  - type: imageGallery
     number: 3
     subtitle: planos
-  - type: imageGallery
     content:
       - src: /images/ptipo.jpg
         text: Planta tipo
