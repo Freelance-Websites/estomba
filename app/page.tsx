@@ -17,6 +17,8 @@ import BoxedImage from '@/components/BoxedImage';
 import TextAndImage from '@/components/TextAndImage';
 import ImageGrid from '@/components/ImageGrid';
 import Infographic from '@/components/Infographic';
+import VirtualStaging from '@/components/VirtualStaging';
+import ImageGallery from '@/components/ImageGallery';
 import Map from '@/components/Map';
 
 interface Section {
@@ -34,6 +36,8 @@ interface Section {
   content?: [];
   interestPoints?: [];
   images?: string[];
+  firstImage?: string;
+  secondImage?: string;
 }
 
 export default function Home() {
@@ -72,7 +76,7 @@ export default function Home() {
     data-scroll-container
    >
     <Header />
-    <Loader />
+    {/* <Loader /> */}
     {attributes.sections.map((section: Section, index: Number) => {
       switch(section.type) {
         case 'hero':
@@ -169,6 +173,26 @@ export default function Home() {
                   key={`${index}`}
                   text={section.text || ""}
                   scrollDirection={scrollDirection}
+                />
+              )
+            case 'virtualStaging':
+              return (
+                <VirtualStaging
+                  key={`${index}`}
+                  firstImage={section.firstImage || ""}
+                  secondImage={section.secondImage || ""}
+                  number={section.number || "1"}
+                  subtitle={section.subtitle}
+                  text={section.text}
+                  textLocation={section.textLocation}
+                />
+              )
+            case 'imageGallery':
+              return (
+                <ImageGallery
+                  key={`${index}`}
+                  content={section.content || []}
+                  images={section.content?.map((slide: any) => slide.image) || []}
                 />
               )
         default:

@@ -203,7 +203,6 @@ sections:
   - type: virtualStaging
     firstImage: /images/main-image.jpg
     secondImage: /images/unit-1.jpg
-  - type: subtitle
     number: 3
     subtitle: configuración a medida
     text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
@@ -214,26 +213,25 @@ sections:
     subtitle: planos
   - type: imageGallery
     content:
-      - image: /images/ptipo.jpg
-        title: ""
+      - src: /images/ptipo.jpg
         text: Planta tipo
-      - image: /images/ptipo-det.jpg
+      - src: /images/ptipo-det.jpg
         text: Planta tipo – Detalle
-      - image: /images/pterraza.jpg
+      - src: /images/pterraza.jpg
         text: Planta terraza
-      - image: /images/pterraza-det.jpg
+      - src: /images/pterraza-det.jpg
         text: Planta terraza – Detalle
-      - image: /images/dos-ambientes.jpg
+      - src: /images/dos-ambientes.jpg
         text: Dos ambientes
-      - image: /images/p6to.jpg
+      - src: /images/p6to.jpg
         text: Piso sexto
-      - image: /images/p7mo.jpg
+      - src: /images/p7mo.jpg
         text: Piso 7mo
   - type: title
     title: unidades
   - type: textAndImage
     number: 3
-    subtitle: unidades
+    subtitle: distribucion
     text: Pisos y duplex de 3 ambientes con balcón terraza.
     proportion: vertical
     align: right

@@ -1,4 +1,4 @@
-import { GeistMono } from 'geist/font/mono';
+import { GeistMono } from "geist/font/mono";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import ReactMarkdown from 'react-markdown';
@@ -37,13 +37,19 @@ const TextAndImage = ({
           className={`
             col-span-full md:col-span-4
             flex flex-col
-            ${subtitle ? 'justify-between' : 'justify-end'}
+            ${!subtitle && text
+              ? 'justify-end'
+              : subtitle && text && images.length > 1 ? 'justify-start'
+              : 'justify-between'
+            }
             ${align === 'left' && `lg:col-start-7 lg:col-start-9`}
           `}
         >
           {subtitle &&
             <div
-              className="flex items-baseline gap-8 md:gap-24 mb-4 md:mb-6 lg:mb-0"
+              className="flex items-baseline gap-8 md:gap-24 mb-6 md:mb-8 lg:mb-12"
+              data-scroll
+              data-scroll-speed="0.5"
             >
               <span
                 className={`${GeistMono.className} text-black font-semibold text-xs`}
@@ -58,23 +64,27 @@ const TextAndImage = ({
             </div>
           }
           <div
-            className={`text-black text-base grid gap-2 md:gap-4 ${styles.RichText}`}
+            className={`
+              text-black text-base grid gap-2 md:gap-4
+              ${subtitle && images.length > 1 && 'max-w-[230px] md:ml-32 mt-4 md:mt-6'}
+              ${styles.RichText}
+            `}
           >
             <ReactMarkdown>{text}</ReactMarkdown>
           </div>
         </div>
       }
-      <div
-        className={`
-          ${proportion === 'vertical' && images.length <= 1 || proportion === 'square' ? 'col-span-full md:col-span-4 lg:col-span-6'
-          : proportion === 'vertical' && images.length > 1 ? 'col-span-full md:col-span-4 lg:col-span-4'
-          // Horizontal proportion
-          : 'col-span-full lg:col-span-8'}
-          ${align === 'right' ? `lg:col-start-7` : 'md:row-start-1'}
-        `}
-        ref={ref}
-      >
-        {images.map((image, index) =>
+      {images.map((image, index) =>
+        <div
+          className={`
+            ${proportion === 'vertical' && images.length <= 1 || proportion === 'square' ? 'col-span-full md:col-span-4 lg:col-span-6'
+            : proportion === 'vertical' && images.length > 1 ? 'col-span-full md:col-span-4'
+            // Horizontal proportion
+            : 'col-span-full lg:col-span-8'}
+            ${align === 'right' && images.length <= 1 ? `lg:col-start-7` : images.length > 1 ? '' : 'md:row-start-1'}
+          `}
+          ref={ref}
+        >
           <Image
             src={image}
             alt={subtitle || "Estomba"}
@@ -90,8 +100,8 @@ const TextAndImage = ({
             quality={80}
             key={index}
           />
-        )}
-      </div>
+        </div>
+      )}
     </section>
   )
 }
