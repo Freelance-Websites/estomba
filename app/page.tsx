@@ -13,6 +13,8 @@ import Text from '@/components/Text';
 import Phrase from '@/components/Phrase';
 import Marquee from '@/components/Marquee';
 import Stats from '@/components/Stats';
+import Units from '@/components/Units';
+
 import BoxedImage from '@/components/BoxedImage';
 import TextAndImage from '@/components/TextAndImage';
 import ImageGrid from '@/components/ImageGrid';
@@ -197,6 +199,13 @@ export default function Home() {
                   subtitle={section.subtitle}
                   text={section.text}
                   textLocation={section.textLocation}
+                />
+              )
+            case 'units':
+              return (
+                <Units
+                  key={`${index}`}
+                  content={section.content || []}
                 />
               )
         default:
