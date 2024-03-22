@@ -83,7 +83,6 @@ export default function Home() {
     className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-y-8 md:gap-y-16 lg:gap-y-24 xl:gap-y-32 bg-white"
     data-scroll-container
    >
-    <Contact availableUnits={availableUnits} />
     <Header />
     {/* <Loader /> */}
     {attributes.sections.map((section: Section, index: Number) => {
