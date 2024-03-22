@@ -1,4 +1,5 @@
 import { GeistMono } from 'geist/font/mono';
+import slugify from 'react-slugify';
 
 interface Text {
   content: [];
@@ -15,6 +16,7 @@ const Text = ({ content }: Text) => {
     <section
       className="col-span-full lg:col-span-10 lg:col-start-2 px-4 px-8 lg:px-0"
       data-scroll-section
+      data-scroll-to=""
     >
       {content.map((item: Item, index) =>
         <div key={index}>
@@ -31,6 +33,7 @@ const Text = ({ content }: Text) => {
               </span>
               <h2
                 className="font-medium text-xl text-black"
+                data-title={slugify(item.subtitle)}
               >
                 {item.subtitle}
               </h2>

@@ -66,18 +66,18 @@ export default function Home() {
           const anchorLinks = document.querySelectorAll('a[href^="#"]');
           
           // Add id to headings for anchor links
-          // anchorLinks.forEach((link) => {
-          //   const linkText = (link as HTMLAnchorElement).href.split('#')[1];
-          //   const headingElements = document.querySelectorAll(`h1, h2, h3, h4, h5, h6`);
-          //   headingElements.forEach((headingElement) => {
-          //     if (headingElement.textContent?.includes(linkText)) {
-          //       const parentSection = headingElement.closest('section');
-          //       if (parentSection) {
-          //         parentSection.id = linkText;
-          //       }
-          //     }
-          //   });
-          // });
+          anchorLinks.forEach((link) => {
+            const linkText = (link as HTMLAnchorElement).href.split('#')[1];
+            const headingElements = document.querySelectorAll(`h1, h2, h3, h4, h5, h6`);
+            headingElements.forEach((headingElement) => {
+              if (headingElement.getAttribute('data-title')?.includes(linkText)) {
+                const parentSection = headingElement.closest('section');
+                if (parentSection) {
+                  parentSection.id = linkText;
+                }
+              }
+            });
+          });
         }, 400);
 
         scroll.on('scroll', (instance) => {
@@ -101,7 +101,7 @@ export default function Home() {
     data-scroll-container
    >
     <Header />
-    {/* <Loader /> */}
+    <Loader />
     {attributes.sections.map((section: Section, index: Number) => {
       switch(section.type) {
         case 'hero':

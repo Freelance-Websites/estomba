@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import slugify from 'react-slugify';
 
 interface TitleProps {
   title: string;
@@ -9,9 +10,11 @@ const Title = ({ title }: TitleProps) => {
     <section
       className="col-span-full lg:col-span-10 lg:col-start-2 px-8 lg:px-0"
       data-scroll-section
+      data-scroll-to=""
       >
       <h3
         className="flex text-black text-[19vw] font-light leading-none"
+        data-title={slugify(title)}
       >
         {title.split('').map((char, index) => {
           const { ref, inView } = useInView({

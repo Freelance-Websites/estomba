@@ -52,7 +52,6 @@ const Header = () => {
     <>
       <header
         className="fixed -top[120px] p-4 md:p-8 w-full col-span-full z-10"
-        data-scroll-section
       >
         <nav
           className="flex items-center"
@@ -81,7 +80,7 @@ const Header = () => {
           <DesktopMenu />
         </nav>
       </header>
-      {/* <MobileMenu closeMenu={closeMenu} /> */}
+      <MobileMenu closeMenu={closeMenu} />
     </>
   )
 }
@@ -153,13 +152,21 @@ export const MobileMenu = ({ closeMenu }: MobileMenuProps) => (
         </div>
         <ul className="socials flex gap-4">
           <li>
-            <a href="#">Twitter</a>
+            <a
+              href="https://instagram.com/@estomba.1046"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
           </li>
           <li>
-            <a href="#">Instagram</a>
-          </li>
-          <li>
-            <a href="#">LinkedIn</a>
+            <a
+              href="https://wa.me/541140435869"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            </a>
           </li>
         </ul>
       </div>
