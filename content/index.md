@@ -23,11 +23,11 @@ sections:
           árbol de sombra.
   - type: boxedImage
     image: /images/main-image.jpg
-  - type: phrase
-    text: grilla de hormigón modula la fachada filtra las visuales
+  - type: marquee
+    text: pisos • dúplex • terrazas • 
   - type: textAndImage
     number: 1
-    subtitle: características constructivas
+    subtitle: grilla de hormigón que modula la fachada y filtra las visuales
     text: >-
       En la parte posterior del lote se calza el núcleo de circulación
       coincidente con el patio vertical, estableciendo un diálogo lleno-vacío.
@@ -169,7 +169,7 @@ sections:
   - type: boxedImage
     image: /images/unit-1.jpg
   - type: marquee
-    text: pisos • dúplex • terrazas • 
+    text: unidades a medida • 
   - type: text
     content:
       - text: Los departamentos están equipados con calefacción individual por piso
