@@ -84,6 +84,7 @@ const TextAndImage = ({
             ${align === 'right' && images.length <= 1 ? `lg:col-start-7` : images.length > 1 ? '' : 'md:row-start-1'}
           `}
           ref={ref}
+          key={index}
         >
           <Image
             src={image}
