@@ -7,7 +7,11 @@ import { GeistMono } from 'geist/font/mono';
 
 const menuItems = ["edificio", "ubicacion", "unidades", "contacto"];
 
-const Header = () => {
+interface HeaderProps {
+  isScrolled: boolean
+}
+
+const Header = ({ isScrolled }: HeaderProps) => {
   let tl = gsap.timeline({ paused: true });
 
   useEffect(() => {
@@ -51,7 +55,10 @@ const Header = () => {
   return (
     <>
       <header
-        className="fixed -top[120px] p-4 md:p-8 w-full col-span-full z-10"
+        className={`
+          fixed -top[120px] p-4 md:p-8 w-full col-span-full z-10
+          ${isScrolled && 'mix-blend-difference'}
+        `}
       >
         <nav
           className="flex items-center"

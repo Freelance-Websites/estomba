@@ -45,6 +45,7 @@ interface Section {
 }
 
 export default function Home() {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [scrollDirection, setScrollDirection] = useState("down");
   const [availableUnits, setAvailableUnits] = useState([]);
   const [selectedUnit, setSelectedUnit] = useState("");
@@ -83,6 +84,12 @@ export default function Home() {
         scroll.on('scroll', (instance) => {
           //@ts-ignore
           setScrollDirection(instance.direction);
+          
+          if(instance.delta.y > 900) {
+            setIsScrolled(true)
+          } else {
+            setIsScrolled(false);
+          }
         });
 
         return () => {
@@ -100,7 +107,9 @@ export default function Home() {
     className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-y-8 md:gap-y-16 lg:gap-y-24 xl:gap-y-32 bg-white"
     data-scroll-container
    >
-    <Header />
+    <Header
+      isScrolled={isScrolled}
+    />
     <Loader />
     {attributes.sections.map((section: Section, index: Number) => {
       switch(section.type) {
