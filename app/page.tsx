@@ -14,6 +14,7 @@ import Phrase from '@/components/Phrase';
 import Marquee from '@/components/Marquee';
 import Stats from '@/components/Stats';
 import Units from '@/components/Units';
+import Contact from '@/components/Contact';
 
 import BoxedImage from '@/components/BoxedImage';
 import TextAndImage from '@/components/TextAndImage';
@@ -40,10 +41,12 @@ interface Section {
   images?: string[];
   firstImage?: string;
   secondImage?: string;
+  setAvailableUnits?: () => void;
 }
 
 export default function Home() {
   const [scrollDirection, setScrollDirection] = useState("down");
+  const [availableUnits, setAvailableUnits] = useState([]);
 
   useEffect(() => {
     import("locomotive-scroll").then((locomotiveModule) => {
@@ -70,6 +73,9 @@ export default function Home() {
         }
        }
     });
+
+    const units = attributes.sections.filter((section: Section) => section.type === 'units');
+    setAvailableUnits(units[0].content.filter((unit: any) => unit.available));
   }, []);
 
   return (
@@ -77,6 +83,7 @@ export default function Home() {
     className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-y-8 md:gap-y-16 lg:gap-y-24 xl:gap-y-32 bg-white"
     data-scroll-container
    >
+    <Contact availableUnits={availableUnits} />
     <Header />
     {/* <Loader /> */}
     {attributes.sections.map((section: Section, index: Number) => {
@@ -212,6 +219,9 @@ export default function Home() {
           break;
       }
     })}
+    <Contact
+      availableUnits={availableUnits}
+    />
    </main>
   );
 }
