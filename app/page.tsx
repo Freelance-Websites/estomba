@@ -72,7 +72,7 @@ export default function Home() {
     data-scroll-container
    >
     <Header />
-    {/* <Loader /> */}
+    <Loader />
     {attributes.sections.map((section: Section, index: Number) => {
       switch(section.type) {
         case 'hero':

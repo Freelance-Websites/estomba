@@ -26,7 +26,7 @@ const Map = ({ interestPoints, content }: MapProps) => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY || ''
-  })
+  });
 
   const [map, setMap] = useState(null)
 
@@ -48,12 +48,12 @@ const Map = ({ interestPoints, content }: MapProps) => {
 
   return (
     <section
-      className="col-span-full"
+      className="col-span-full min-h-screen"
       data-scroll-section
     >
         {isLoaded && (
           <GoogleMap
-            mapContainerStyle={{ height: "600px", width: "100%", position: 'relative' }}
+            mapContainerStyle={{ height: "600px", width: "100", position: 'relative' }}
             center={center}
             zoom={16}
             onUnmount={onUnmount}
