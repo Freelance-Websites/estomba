@@ -27,7 +27,7 @@ sections:
     text: pisos • dúplex • terrazas • 
   - type: textAndImage
     number: 1
-    subtitle: grilla de hormigón que modula la fachada y filtra las visuales
+    subtitle: grilla de hormigón modula la fachada filtra las visuales
     text: >-
       En la parte posterior del lote se calza el núcleo de circulación
       coincidente con el patio vertical, estableciendo un diálogo lleno-vacío.
