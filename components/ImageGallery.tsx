@@ -111,7 +111,7 @@ const ImageGallery = ({ content, subtitle, number, text }: ImageGalleryProps) =>
             >
               <img
                 src={slide.src}
-                className="aspect-horizontal object-contain block h-80 lg:h-[680px] cursor-pointer"
+                className="aspect-horizontal object-contain block h-80 lg:h-[680px] w-3/4 cursor-pointer"
                 alt={slide.text}
                 onClick={() => {
                   if (lightGallery.current) {
@@ -120,13 +120,13 @@ const ImageGallery = ({ content, subtitle, number, text }: ImageGalleryProps) =>
                   }
                 }}
               />
-              <div className='text-black'>
+              <div className='text-black self-start text-sm'>
                 {slide.title && 
-                  <h5 className={`${GeistMono.className} text-sm font-medium`}>
+                  <h5 className={`${GeistMono.className} font-medium`}>
                     {slide.title}
                   </h5>
                 }
-                <p className="text-md">
+                <p>
                   {slide.text}
                 </p>
               </div>
