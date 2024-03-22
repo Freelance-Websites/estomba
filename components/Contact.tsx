@@ -29,7 +29,7 @@ const Contact = ({ availableUnits, selectedUnit }: OptionProps) => {
       style={{
         marginLeft: 'calc(50% - 50vw)'
       }}
-      id="contact"
+      id="contacto"
     >
       <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-y-8 md:gap-y-16 lg:gap-y-24 xl:gap-y-32">
         {/* Title */}

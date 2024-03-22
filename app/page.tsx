@@ -64,14 +64,16 @@ export default function Home() {
           scroll.init();
 
           const anchorLinks = document.querySelectorAll('a[href^="#"]');
+          
+          // Add id to headings for anchor links
           anchorLinks.forEach((link) => {
-            link.addEventListener('click', (event) => {
-              event.preventDefault();
-              const targetId = link.getAttribute('href');
-              if (targetId) { // Add null check
-                const targetElement = document.querySelector(targetId);
-                if (targetElement instanceof HTMLElement) {
-                  scroll.scrollTo(targetElement);
+            const linkText = (link as HTMLAnchorElement).href.split('#')[1];
+            const headingElements = document.querySelectorAll(`h1, h2, h3, h4, h5, h6`);
+            headingElements.forEach((headingElement) => {
+              if (headingElement.textContent?.includes(linkText)) {
+                const parentSection = headingElement.closest('section');
+                if (parentSection) {
+                  parentSection.id = linkText;
                 }
               }
             });

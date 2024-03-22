@@ -5,24 +5,7 @@ import { gsap } from "gsap";
 import Image from "next/image";
 import { GeistMono } from 'geist/font/mono';
 
-const menuItems = [
-  {
-    href: 'building',
-    text: 'edificio'
-  },
-  {
-    href: 'location',
-    text: 'ubicación'
-  },
-  {
-    href: 'units',
-    text: 'unidades'
-  },
-  {
-    href: 'contact',
-    text: 'contacto'
-  }
-];
+const menuItems = ["edificio", "ubicacion", "unidades", "contacto"];
 
 const Header = () => {
   let tl = gsap.timeline({ paused: true });
@@ -97,7 +80,7 @@ const Header = () => {
           <DesktopMenu />
         </nav>
       </header>
-      <MobileMenu closeMenu={closeMenu} />
+      {/* <MobileMenu closeMenu={closeMenu} /> */}
     </>
   )
 }
@@ -145,10 +128,11 @@ export const MobileMenu = ({ closeMenu }: MobileMenuProps) => (
             className="menu-link -top-20 opacity-0 relative w-max mt-4"
           >
             <a
-              href={`#${menuItem.href}`}
+              href={`#${menuItem}`}
               className="font-medium text-4xl anchor-link"
+              data-scroll-to=""
             >
-              {menuItem.text}
+              {menuItem}
               <sup
                 className={`${GeistMono.className} ml-1 font-semibold text-xs`}
               >
@@ -190,10 +174,11 @@ export const DesktopMenu = () => (
         key={index}
       >
         <a
-          href={`#${menuItem.href}`}
+          href={`#${menuItem}`}
+          data-scroll-to=""
           className="transition ease-in-out duration-100 hover:opacity-80 font-medium text-xl"
         >
-          {menuItem.text}
+          {menuItem}
           <sup
             className={`${GeistMono.className} ml-1 font-semibold text-xs`}
           >
