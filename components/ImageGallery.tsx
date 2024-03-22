@@ -59,7 +59,7 @@ const ImageGallery = ({ content, subtitle, number, text }: ImageGalleryProps) =>
 
   return (
     <section
-      className="col-span-full lg:col-span-10 lg:col-start-2 px-8 lg:px-0"
+      className="col-span-full lg:col-span-10 lg:col-start-2 px-8 lg:px-0 relative"
       data-scroll-section
     >
       {subtitle &&
