@@ -8,6 +8,7 @@ import Cta from "./Cta";
 
 interface OptionProps {
   availableUnits: Array<Unit>;
+  selectedUnit: string | null;
 }
 
 interface Unit {
@@ -20,7 +21,7 @@ interface Unit {
   surfaceThree?: string;
 }
 
-const Contact = ({ availableUnits }: OptionProps) => {
+const Contact = ({ availableUnits, selectedUnit }: OptionProps) => {
   return (
     <section
       className="col-span-full lg:col-span-10 lg:col-start-2 bg-black w-screen px-8 lg:px-0 py-16 md:py-24 lg:py-32 xl:py-48"
@@ -28,6 +29,7 @@ const Contact = ({ availableUnits }: OptionProps) => {
       style={{
         marginLeft: 'calc(50% - 50vw)'
       }}
+      id="contact"
     >
       <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-y-8 md:gap-y-16 lg:gap-y-24 xl:gap-y-32">
         {/* Title */}
@@ -111,6 +113,7 @@ const Contact = ({ availableUnits }: OptionProps) => {
             label="unidad"
             required={true}
             options={availableUnits.map((unit) => unit.uf?.toString() || "")}
+            selectedUnit={selectedUnit || ""}
           />
           <Textarea
             id="message"

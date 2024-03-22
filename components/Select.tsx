@@ -3,6 +3,7 @@ interface SelectProps {
   label: string;
   required: boolean;
   options: string[];
+  selectedUnit: string;
 }
 
 export default function Select({
@@ -10,6 +11,7 @@ export default function Select({
   label,
   required,
   options,
+  selectedUnit
 }: SelectProps) {
   return (
     <div>
@@ -26,6 +28,7 @@ export default function Select({
           <option
             value={option}
             key={index}
+            selected={option === selectedUnit}
           >
             {option}
           </option>

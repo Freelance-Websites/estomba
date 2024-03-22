@@ -47,6 +47,7 @@ interface Section {
 export default function Home() {
   const [scrollDirection, setScrollDirection] = useState("down");
   const [availableUnits, setAvailableUnits] = useState([]);
+  const [selectedUnit, setSelectedUnit] = useState("");
 
   useEffect(() => {
     import("locomotive-scroll").then((locomotiveModule) => {
@@ -212,6 +213,7 @@ export default function Home() {
                 <Units
                   key={`${index}`}
                   content={section.content || []}
+                  setSelectedUnit={setSelectedUnit}
                 />
               )
         default:
@@ -220,6 +222,7 @@ export default function Home() {
     })}
     <Contact
       availableUnits={availableUnits}
+      selectedUnit={selectedUnit}
     />
    </main>
   );

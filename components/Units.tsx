@@ -3,24 +3,31 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 interface Unit {
-  available?: boolean;
-  uf?: number;
-  description?: string;
-  location?: string;
+  available: boolean;
+  uf: number;
+  description: string;
+  location: string;
   surfaceOne?: string;
   surfaceTwo?: string;
   surfaceThree?: string;
 }
 
+import { Dispatch } from 'react';
+
 interface UnitProps {
   content: Array<Unit>;
+  setSelectedUnit: Dispatch<React.SetStateAction<string>>;
 };
 
-const Units = ({ content }: UnitProps) => {
+const Units = ({ content, setSelectedUnit }: UnitProps) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.25,
   });
+
+  const setSelectedUnitAndScrollDown = (unit: Unit) => {
+    setSelectedUnit(unit.uf.toString());
+  };
 
   return (
     <section
@@ -108,6 +115,7 @@ const Units = ({ content }: UnitProps) => {
                     rounded-2xl lg:rounded-none
                     ${unit.available ? 'cursor-pointer' : 'cursor-not-allowed'}
                   `}
+                  onClick={() => setSelectedUnitAndScrollDown(unit)}
                 >
                   <span className="text-left">{unit.available ? 'Consultar' : 'No disponible'}</span>
                   <svg className="absolute right-0 top-6 lg:static transform md:scale-75 2xl:scale-100" fill="none" height="27" viewBox="0 0 28 27" width="28" xmlns="http://www.w3.org/2000/svg">
