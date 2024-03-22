@@ -56,7 +56,7 @@ export default function Home() {
         let scroll = new locomotiveModule.default({
             el: scrollContainer,
             smooth: true,
-            // resetNativeScroll: true,
+            resetNativeScroll: false,
             getDirection: true,
          });
        
