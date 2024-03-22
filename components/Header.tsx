@@ -146,7 +146,7 @@ export const MobileMenu = ({ closeMenu }: MobileMenuProps) => (
           >
             <a
               href={`#${menuItem.href}`}
-              className="font-medium text-4xl"
+              className="font-medium text-4xl anchor-link"
             >
               {menuItem.text}
               <sup

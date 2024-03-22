@@ -62,6 +62,20 @@ export default function Home() {
        
         setTimeout(function () {
           scroll.init();
+
+          const anchorLinks = document.querySelectorAll('a[href^="#"]');
+          anchorLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+              event.preventDefault();
+              const targetId = link.getAttribute('href');
+              if (targetId) { // Add null check
+                const targetElement = document.querySelector(targetId);
+                if (targetElement instanceof HTMLElement) {
+                  scroll.scrollTo(targetElement);
+                }
+              }
+            });
+          });
         }, 400);
 
         scroll.on('scroll', (instance) => {

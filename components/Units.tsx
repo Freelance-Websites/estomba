@@ -27,6 +27,9 @@ const Units = ({ content, setSelectedUnit }: UnitProps) => {
 
   const setSelectedUnitAndScrollDown = (unit: Unit) => {
     setSelectedUnit(unit.uf.toString());
+
+    const contactLink = document.querySelector('a[href="#contact"]') as HTMLAnchorElement;
+    if (contactLink) contactLink.click();
   };
 
   return (
