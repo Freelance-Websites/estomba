@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import Image from "next/image";
 
 interface Hero {
   image: string;
@@ -37,12 +36,10 @@ const Hero = ({ image, title}: Hero) => {
       <div className="relative hero overflow-hidden">
         <div className="scale-[2] w-screen h-screen relative">
           {isImage ?
-            <Image
+            <img
               src={image}
               alt={title}
-              className="w-full h-full"
-              fill={true}
-              quality={80}
+              className="w-full h-full object-cover"
             />
             :
             <video

@@ -1,7 +1,6 @@
 import { useState, useCallback } from 'react';
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import ReactMarkdown from 'react-markdown';
-import Image from 'next/image';
 
 interface InterestPoint {
   title: string;
@@ -106,7 +105,7 @@ const Map = ({ interestPoints, content }: MapProps) => {
             <h4 className="font-medium mb-1">[referencias]</h4>
             <ol className="md:pt-0 lg:pt-5">
               <li className='flex gap-2 items-center mb-1 lg:mb-0'>
-                <Image
+                <img
                   src={'/images/map/point.svg'}
                   alt="Punto de interés"
                   width={18}
@@ -115,7 +114,7 @@ const Map = ({ interestPoints, content }: MapProps) => {
                 <span>Puntos de inter&eacute;s.</span>
               </li>
               <li className='flex gap-2 items-center mb-1 lg:mb-0'>
-                <Image
+                <img
                   src={'/images/map/park.svg'}
                   alt="Plazas"
                   width={18}
@@ -124,7 +123,7 @@ const Map = ({ interestPoints, content }: MapProps) => {
                 <span>Plazas.</span>
               </li>
               <li className='flex gap-2 items-center'>
-                <Image
+                <img
                   src={'/images/map/transport.svg'}
                   alt="Transporte"
                   width={18}

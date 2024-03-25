@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
 interface BoxedImage {
@@ -18,13 +17,10 @@ const BoxedImage = ({ image, alt }: BoxedImage) => {
       ref={ref}
       data-scroll-section
     >
-      <Image
+      <img
         src={image}
         alt={alt || "Estomba"}
         className={`${inView ? 'opacity-1' : 'opacity-0'} transition-opacity delay-200 duration-500 ease-in-out w-full h-full`}
-        width={1200}
-        height={800}
-        quality={80}
         data-scroll
         data-scroll-speed="1"
       />

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
 interface GridProps {
@@ -35,7 +34,7 @@ const ImageGrid = ({ content }: GridProps) => {
             `}
             ref={ref}
           >
-            <Image
+            <img
               src={item.image}
               alt={"Estomba"}
               className={`
@@ -46,9 +45,6 @@ const ImageGrid = ({ content }: GridProps) => {
                   : 'translate-x-0 opacity-1'
                 }
               `}
-              width={1200}
-              height={800}
-              quality={80}
             />
           </div>
         )

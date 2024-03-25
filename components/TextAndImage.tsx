@@ -1,5 +1,4 @@
 import { GeistMono } from "geist/font/mono";
-import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import ReactMarkdown from 'react-markdown';
 
@@ -86,7 +85,7 @@ const TextAndImage = ({
           ref={ref}
           key={index}
         >
-          <Image
+          <img
             src={image}
             alt={subtitle || "Estomba"}
             className={`
@@ -96,9 +95,6 @@ const TextAndImage = ({
                 : 'translate-x-0 opacity-1'
               }
             `}
-            width={1200}
-            height={800}
-            quality={80}
             key={index}
           />
         </div>

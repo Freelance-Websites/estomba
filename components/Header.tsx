@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { gsap } from "gsap";
-import Image from "next/image";
 import { GeistMono } from 'geist/font/mono';
 
 const menuItems = ["edificio", "ubicacion", "unidades", "contacto"];
@@ -69,12 +68,11 @@ const Header = ({ isScrolled }: HeaderProps) => {
               data-scroll-to=""
               className="transition ease-in-out duration-100 hover:opacity-80"
             >
-              <Image
+              <img
                 src="/images/logo.png"
                 alt="Logo BAS + Labal"
                 width={130}
                 height={24}
-                quality={80}
               />
             </a>
           </div>
@@ -117,13 +115,11 @@ export const MobileMenu = ({ closeMenu }: MobileMenuProps) => (
           className="transition ease-in-out duration-100 hover:opacity-80"
           onClick={() => closeMenu()}
         >
-          <Image
+          <img
             src="/images/logo.png"
             alt="Logo BAS + Laba"
             width={130}
             height={26}
-            quality={80}
-            priority
           />
         </a>
       </div>

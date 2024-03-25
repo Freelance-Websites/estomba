@@ -13,7 +13,7 @@ interface VirtualStagingProps {
 const VirtualStaging = ({ firstImage, secondImage, number, subtitle, text, textLocation }: VirtualStagingProps) => {
   return (
     <section
-      className="col-span-full lg:col-span-10 lg:col-start-2 px-8 lg:px-0"
+      className="col-span-full lg:col-span-10 lg:col-start-2 px-8 lg:px-0 h-screen"
       data-scroll-section
     >
       <ReactCompareImage

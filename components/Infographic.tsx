@@ -1,5 +1,4 @@
 import React, { useState, useRef, useCallback } from 'react';
-import Image from 'next/image';
 import { useInView } from "react-intersection-observer";
 
 interface Content {
@@ -139,12 +138,9 @@ const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
       <div
         className='col-span-full lg:col-span-6 lg:col-start-4 lg:transform lg:absolute lg:left-1/2 lg:-translate-x-1/2 xl:translate-x-0 xl:left-0 order-first lg:order-none'
       >
-        <Image
+        <img
           src={image}
           alt="Building image"
-          width={1200}
-          height={800}
-          quality={80}
           className={`
             w-full md:w-96 md:mx-auto lg:w-full h-full
             transition-opacity ease-in-out duration-500
