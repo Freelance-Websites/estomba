@@ -9,8 +9,8 @@ const Loader = () => {
   const [isLogoVisible, setIsLogoVisible] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflowY = 'hidden';
-    document.documentElement.style.overflowY = 'hidden';
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
   }, []);
 
   const animateText = () => {
@@ -70,8 +70,8 @@ const Loader = () => {
         duration: 0.1,
         delay: 6,
         onComplete: () => {
-          document.body.style.overflowY = 'initial';
-          document.documentElement.style.overflowY = 'initial';
+            document.body.style.removeProperty('overflow');
+            document.documentElement.style.removeProperty('overflow');
         }
       });
     }, 300);
