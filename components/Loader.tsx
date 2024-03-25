@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { GeistMono } from 'geist/font/mono';
 import { gsap } from "gsap";
 import CountUp from 'react-countup';
@@ -8,11 +8,10 @@ import CountUp from 'react-countup';
 const Loader = () => {
   const [isLogoVisible, setIsLogoVisible] = useState(false);
 
-  const startAnimation = () => {
-    setIsLogoVisible(true);
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.overflow = 'hidden';
-  }
+  useEffect(() => {
+    document.body.style.overflowY = 'hidden';
+    document.documentElement.style.overflowY = 'hidden';
+  }, []);
 
   const animateText = () => {
     setTimeout(() => {
@@ -71,8 +70,8 @@ const Loader = () => {
         duration: 0.1,
         delay: 6,
         onComplete: () => {
-          document.body.style.overflow = 'initial';
-          document.documentElement.style.overflow = 'initial';
+          document.body.style.overflowY = 'initial';
+          document.documentElement.style.overflowY = 'initial';
         }
       });
     }, 300);
@@ -99,7 +98,7 @@ const Loader = () => {
               suffix="%"
               delay={Math.random()}
               onEnd={() => animateText()}
-              onStart={() => startAnimation()}
+              onStart={() => setIsLogoVisible(true)}
             />
           </div>
           <div
