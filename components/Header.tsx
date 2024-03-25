@@ -119,10 +119,11 @@ export const MobileMenu = ({ closeMenu }: MobileMenuProps) => (
         >
           <Image
             src="/images/logo.png"
-            alt="Logo BAS + Labal"
+            alt="Logo BAS + Laba"
             width={130}
-            height={24}
+            height={26}
             quality={80}
+            priority
           />
         </a>
       </div>

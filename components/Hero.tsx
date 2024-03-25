@@ -35,7 +35,7 @@ const Hero = ({ image, title}: Hero) => {
       id="top"
     >
       <div className="relative hero overflow-hidden">
-        <div className="scale-[2] w-screen h-screen">
+        <div className="scale-[2] w-screen h-screen relative">
           {isImage ?
             <Image
               src={image}
