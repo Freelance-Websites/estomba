@@ -111,6 +111,7 @@ export const MobileMenu = ({ closeMenu }: MobileMenuProps) => (
           href="#top"
           data-scroll-to=""
           className="transition ease-in-out duration-100 hover:opacity-80"
+          onClick={() => closeMenu()}
         >
           <Image
             src="/images/logo.png"
@@ -139,6 +140,7 @@ export const MobileMenu = ({ closeMenu }: MobileMenuProps) => (
               href={`#${menuItem}`}
               className="font-medium text-4xl anchor-link"
               data-scroll-to=""
+              onClick={() => closeMenu()}
             >
               {menuItem}
               <sup
