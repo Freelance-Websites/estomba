@@ -1,5 +1,7 @@
 import { GeistMono } from "geist/font/mono";
 import { useInView } from "react-intersection-observer";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Input from "./Input";
 import Select from "./Select";
@@ -22,6 +24,33 @@ interface Unit {
 }
 
 const Contact = ({ availableUnits, selectedUnit }: OptionProps) => {
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const myForm = event.target as HTMLFormElement;
+    const formData = new FormData(myForm);
+    const formDataString = new URLSearchParams(formData as any).toString();
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formDataString,
+    })
+      .then(() => toast("Mensaje enviado correctamente. Nos contactaremos a la brevedad.", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        type: "success",
+      
+      }))
+      .catch((error) => alert(error));
+  };
+
   return (
     <section
       className="col-span-full lg:col-span-10 lg:col-start-2 bg-black w-screen px-8 lg:px-0 py-16 md:py-24 lg:py-32 xl:py-48"
@@ -89,6 +118,7 @@ const Contact = ({ availableUnits, selectedUnit }: OptionProps) => {
           className="col-span-full lg:col-span-10 lg:col-start-2 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 md:gap-8 mt-4 md:mt-8"
           method="POST"
           netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
         >
           {/* Honeypot */}
           <input type="hidden" name="form-name" value="contact" />
@@ -128,6 +158,7 @@ const Contact = ({ availableUnits, selectedUnit }: OptionProps) => {
           </div>
         </form>
       </div>
+      <ToastContainer autoClose={5000} />
     </section>
   )
 }
