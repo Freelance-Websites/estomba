@@ -8,6 +8,12 @@ import CountUp from 'react-countup';
 const Loader = () => {
   const [isLogoVisible, setIsLogoVisible] = useState(false);
 
+  const startAnimation = () => {
+    setIsLogoVisible(true);
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+  }
+
   const animateText = () => {
     setTimeout(() => {
       gsap.to(".counter span", {
@@ -64,6 +70,10 @@ const Loader = () => {
         display: 'none',
         duration: 0.1,
         delay: 6,
+        onComplete: () => {
+          document.body.style.overflow = 'initial';
+          document.documentElement.style.overflow = 'initial';
+        }
       });
     }, 300);
   }
@@ -89,7 +99,7 @@ const Loader = () => {
               suffix="%"
               delay={Math.random()}
               onEnd={() => animateText()}
-              onStart={() => setIsLogoVisible(true)}
+              onStart={() => startAnimation()}
             />
           </div>
           <div
