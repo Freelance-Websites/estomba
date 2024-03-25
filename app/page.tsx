@@ -60,8 +60,8 @@ export default function Home() {
             resetNativeScroll: false,
             getDirection: true,
             smartphone: {
-              smooth: true,
-            },
+              smooth: false,
+            }
          });
        
         setTimeout(function () {
@@ -88,7 +88,7 @@ export default function Home() {
           //@ts-ignore
           setScrollDirection(instance.direction);
           
-          if(instance.delta.y > 900) {
+          if(instance.scroll.y > 900) {
             setIsScrolled(true)
           } else {
             setIsScrolled(false);
