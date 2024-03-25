@@ -59,9 +59,14 @@ export default function Home() {
             smooth: true,
             resetNativeScroll: false,
             getDirection: true,
+            reloadOnContextChange: true,
             smartphone: {
               smooth: false,
-            }
+            },
+            tablet: {
+              breakpoint: 1024,
+              smooth: false,
+            },
          });
        
         setTimeout(function () {

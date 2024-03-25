@@ -10,13 +10,13 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={GeistSans.className}
+      className={`${GeistSans.className} overflow-x-hidden`}
     >
       <head>
         <meta name="title" content="Estomba" />
         <meta name="description" content="Una propuesta de inversión, que combina un edificio de vivienda de pocas unidades en armonía con un barrio de baja densidad, donde predominan las casas." />
       </head>
-      <body className="antialiased selection:bg-black selection:text-white">{children}</body>
+      <body className="antialiased selection:bg-black selection:text-white overflow-x-hidden">{children}</body>
     </html>
   );
 }
