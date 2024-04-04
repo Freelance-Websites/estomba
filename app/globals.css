@@ -59,6 +59,11 @@ html.has-scroll-dragging {
   vertical-align: top;
   white-space: nowrap;
   height: 100%; }
+  
+/* Hide duplicated scrollbars */
+.c-scrollbar ~ .c-scrollbar {
+  display: none;
+}
 
 .c-scrollbar {
   position: absolute;
