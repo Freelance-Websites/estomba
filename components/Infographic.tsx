@@ -136,7 +136,7 @@ const Infographic: React.FC<InfographicProps> = ({ content, image }) => {
       }
       )}
       <div
-        className='col-span-full lg:col-span-6 lg:col-start-4 lg:transform lg:absolute lg:left-1/2 lg:-translate-x-1/2 xl:translate-x-0 xl:left-0 order-first lg:order-none'
+        className='col-span-full lg:col-span-6 2xl:col-start-4 lg:transform lg:absolute lg:left-1/2 lg:-translate-x-1/2 order-first lg:order-none'
       >
         <img
           src={image}
