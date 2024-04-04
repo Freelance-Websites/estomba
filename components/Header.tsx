@@ -62,17 +62,36 @@ const Header = ({ isScrolled }: HeaderProps) => {
         <nav
           className="flex items-center"
         >
-          <div className="nav-logo flex-1">
+          <div className="nav-logo flex-1 flex items-center gap-2">
             <a
-              href="#top"
-              data-scroll-to=""
-              className="transition ease-in-out duration-100 hover:opacity-80"
+              href="https://ba-studio.com.ar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${isScrolled ? 'hidden' : 'transition ease-in-out duration-100 hover:opacity-80'}`}
             >
               <img
-                src="/images/logo.png"
-                alt="Logo BAS + Labal"
-                width={130}
-                height={24}
+                src="/images/logo-bas.svg"
+                alt="Logo BAS"
+                width={40}
+                height={16}
+              />
+            </a>
+            <span
+              className={`${isScrolled ? 'hidden' : 'font-sans text-white font-medium'}`}
+            >
+              +
+            </span>
+            <a
+              href="https://instagram.com/@labaarquitectos"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${isScrolled ? 'hidden' : 'transition ease-in-out duration-100 hover:opacity-80'}`}
+            >
+              <img
+                src="/images/logo-laba.png"
+                alt="Logo LABA"
+                width={60}
+                height={16}
               />
             </a>
           </div>
