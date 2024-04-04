@@ -1,7 +1,7 @@
 ---
 sections:
   - type: hero
-    image: /images/hero-wip.jpg
+    image: /images/hero-video.mp4
     title: estomba
   - type: text
     content:
@@ -27,7 +27,7 @@ sections:
     text: pisos • dúplex • terrazas • 
   - type: textAndImage
     number: 1
-    subtitle: grilla de hormigón modula la fachada filtra las visuales
+    subtitle: una grilla de hormigón modula la fachada filtra las visuales
     text: >-
       En la parte posterior del lote se calza el núcleo de circulación
       coincidente con el patio vertical, estableciendo un diálogo lleno-vacío.
@@ -75,8 +75,7 @@ sections:
       - text: Decks con lugar para muebles de exteriores y cantero lineal para pantalla
           verde con plantas autóctonas, enredaderas y mariposas.
         title: balcones aterrazados y verde
-      - text: Terraza común arbolada con jardín y propuesta de paisaje. Quincho y
-          solarium en deck con parrilla en terraza.
+      - text: Terraza común arbolada con jardín y propuesta de paisaje. Deck solarium con parrilla en terraza.
         title: amenities
       - text: Prestaciones individuales. Bajas expensas sin vivienda de encargado. Video
           vigilancia y control de accesos. Bicicleteros en planta baja.
@@ -89,9 +88,7 @@ sections:
     title: ubicación
   - type: text
     content:
-      - text: El lote se sitúa en un barrio tradicionalmente de baja densidad, con
-          excelente accesibilidad, en el cual predominan las viviendas
-          unifamiliares y algunos edificios de escala baja. A una cuadra y media
+      - text: El edificio está ubicado en un barrio de escala baja. A una cuadra y media
           hay una plaza de una manzana, sin rejas, que conforma un entorno
           agradable y accesible para una vida tranquila.
       - text: La zona es de fácil acceso, tiene cercanía al subte B, al ferrocarril
