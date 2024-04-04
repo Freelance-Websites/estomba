@@ -38,7 +38,7 @@ const Stats = ({ stats }: StatsProps) => {
             <CountUp
               start={inView ? 0 : 0}
               end={inView ? Number(stat.number) : 0}
-              duration={1}
+              duration={3}
               delay={0.5}
               className={`text-black text-6xl lg:text-8xl xl:text-9xl text-center font-extralight leading-none ${GeistMono.className}`}
             />
