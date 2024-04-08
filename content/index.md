@@ -9,7 +9,7 @@ sections:
         subtitle: edificio
         text: El lote se sitúa en un barrio tradicionalmente de baja densidad, en el
           cual predominan las viviendas unifamiliares, algunos edificios de
-          escala baja, y a continuación, sin rejas, la plaza que ocupa una
+          escala baja, y a continuación, sin rejas, la plaza 25 de agosto que ocupa una
           manzana.
       - text: En el frente, una grilla de hormigón modula la fachada, filtra las
           visuales y contiene los espacios semi cubiertos, cuyo desarrollo es al
@@ -19,7 +19,7 @@ sections:
           público, y por otro lado para responder a la necesidad de expansión
           semicubierta.
       - text: En los últimos pisos, los retiros obligatorios organizan balcones y una
-          para uso común con quincho, deck y terraza verde, pasto, plantas y un
+          terraza para uso común con quincho, deck y terraza verde, pasto, plantas y un
           árbol de sombra.
   - type: boxedImage
     image: /images/main-image.jpg
@@ -88,12 +88,10 @@ sections:
     title: ubicación
   - type: text
     content:
-      - text: El edificio está ubicado en un barrio de escala baja. A una cuadra y media
-          hay una plaza de una manzana, sin rejas, que conforma un entorno
-          agradable y accesible para una vida tranquila.
       - text: La zona es de fácil acceso, tiene cercanía al subte B, al ferrocarril
           Urquiza, y a avenidas principales como Alvarez Thomas, Elcano,
           Triunvirato, Los Incas.
+      - text: La proximidad con el acceso norte y la general paz facilitan la conectividad y movilidad en vehículo particular.
   - type: map
     interestPoints:
       - title: L'épi Boulangerie
@@ -112,7 +110,7 @@ sections:
         coordinates: "-34.58173537555355, -58.46035703185715"
         location: bottom
         type: point
-      - title: Tronador – Villa Urquiza
+      - title: Subte B – Estación Tronador
         coordinates: "-34.58415354156799, -58.46648532645994"
         location: top
         type: transport
@@ -157,7 +155,7 @@ sections:
           cocheras (unidades funcionales), acceso peatonal y espacio guarda
           bicis para todas las unidades.
       - text: En planta baja y primer piso se organizan en una unidad tipo casa en
-          dúplex con jardín integrado. El resto de las unidades son pisos
+          dúplex con jardín integrado y en un departamento dos ambientes con balcón y cocina integrados. El resto de las unidades son pisos
           completos de tres ambientes, con estar-comedor, cocina-lavadero y
           balcón aterrazado a la calle, y dos dormitorios al contrafrente.
       - text: En el último piso hay una terraza para uso común con quincho, deck,
@@ -185,9 +183,9 @@ sections:
 
       3. Madera en solados* o granítico pulido in situ continuo en todas las unidades.
 
-      4. Piso radiante por agua con caldera dual mural a gas natural en todas las unidades.
+      4. Posibilidad de configuración de lay-out a medida (adaptable según verticalidad del proyecto).
 
-      5. Pre instalación de unidades de AA split en todos los ambientes. Energía y caños de refrigeración embutidos.
+      5. Muebles de cocina personalizables en terminaciones y diseño.
 
 
       > \* Especificaciones configurables y opcionales. Podrán suponer costos adicionales.
@@ -228,7 +226,7 @@ sections:
   - type: textAndImage
     number: 3
     subtitle: distribucion
-    text: Pisos y duplex de 3 ambientes con balcón terraza.
+    text: PH con jardín y árboles. Estudio de 2 ambientes. Pisos de 3 ambientes con balcones aterrazados. Duplex con balcón y terraza. Terraza con quincho, cubierta verde y solarium.
     proportion: vertical
     align: right
     image:
@@ -247,8 +245,8 @@ sections:
         uf: 102
         description: Casa/Estudio. 2 ambientes.
         location: 1er piso.
-        surfaceOne: "42.99"
-        surfaceTwo: "12.28"
+        surfaceOne: "44.31"
+        surfaceTwo: "12.50"
       - available: true
         uf: 201
         description: Piso. 3 ambientes.
