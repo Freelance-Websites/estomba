@@ -22,7 +22,7 @@ import ImageGrid from '@/components/ImageGrid';
 import Infographic from '@/components/Infographic';
 import VirtualStaging from '@/components/VirtualStaging';
 import ImageGallery from '@/components/ImageGallery';
-import Map from '@/components/Map';
+// import Map from '@/components/Map';
 
 interface Section {
   stats: never[];
@@ -201,14 +201,14 @@ export default function Home() {
                 title={section.title || ""} 
               />
             )
-            case 'map':
-              return (
-              <Map
-                key={`${index}`}
-                interestPoints={section.interestPoints || []}
-                content={section.content || []}
-              />
-            )
+            // case 'map':
+            //   return (
+            //   <Map
+            //     key={`${index}`}
+            //     interestPoints={section.interestPoints || []}
+            //     content={section.content || []}
+            //   />
+            // )
             case 'marquee':
               return (
                 <Marquee
