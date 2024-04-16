@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: main
+editor:
+  preview: false
 media_folder: "public/images"
 public_folder: "/images"
 collections:
@@ -19,7 +21,7 @@ collections:
               - label: "Imagen y texto a pantalla completa"
                 name: "hero"
                 fields:
-                  - {label: Imagen o video, name: image, widget: image, hint: Tamaño recomendado 2880x1800px o superior}
+                  - {label: Imagen o video, name: image, widget: file, hint: Tamaño recomendado 2880x1800px o superior}
                   - {label: Título, name: title, widget: string, hint: Título sobre el video/imagen, required: false}
               - label: "Título"
                 name: "title"
