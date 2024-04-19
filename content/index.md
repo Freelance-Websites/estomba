@@ -27,7 +27,7 @@ sections:
     text: pisos • dúplex • terrazas • 
   - type: textAndImage
     number: 1
-    subtitle: una grilla de hormigón modula la fachada filtra las visuales
+    subtitle: una grilla de hormigón modula la fachada y filtra las visuales
     text: >-
       En la parte posterior del lote se calza el núcleo de circulación
       coincidente con el patio vertical, estableciendo un diálogo lleno-vacío.
@@ -80,8 +80,7 @@ sections:
       - text: Prestaciones individuales. Bajas expensas sin vivienda de encargado. Video
           vigilancia y control de accesos. Bicicleteros en planta baja.
         title: servicios eco
-      - text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
-          unidades de diseños unicos y custom.
+      - text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas unidades de diseños únicos y custom.
         title: configuración a medida
     image: /images/infographic.jpg
   - type: title
@@ -144,20 +143,15 @@ sections:
       - title: espacios verdes
         text: |-
           Plaza 25 de Agosto. A 2 cuadras. Sin rejas.\
+          Plaza Elcano. A 5 cuadras. Recientemente abierta.\
           Plaza Miguel de Garikoitz. A 6 cuadras.\
-          Parque Los Andes. 4 manzanas de espacio verde.\
-          Plaza Elcano. A 5 cuadras. Recientemente abierta.
+          Parque Los Andes. 4 manzanas de espacio verde.
   - type: text
     content:
       - number: 3
         subtitle: unidades
-        text: El edificio cuenta con 8 departamentos. La planta baja tiene al frente dos
-          cocheras (unidades funcionales), acceso peatonal y espacio guarda
-          bicis para todas las unidades.
-      - text: En planta baja y primer piso se organizan en una unidad tipo casa en
-          dúplex con jardín integrado y en un departamento dos ambientes con balcón y cocina integrados. El resto de las unidades son pisos
-          completos de tres ambientes, con estar-comedor, cocina-lavadero y
-          balcón aterrazado a la calle, y dos dormitorios al contrafrente.
+        text: El edificio cuenta con 8 departamentos. La planta baja tiene al frente dos cocheras (unidades funcionales), acceso peatonal y espacio guarda bicicletas para todas las unidades.
+      - text: En la planta baja y el primer piso se organiza una unidad tipo casa en dúplex con jardín integrado y en el primer piso un departamento de dos ambientes con balcón y cocina integrados. Del segundo al séptimo pisos se organizan pisos completos de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al contrafrente.
       - text: En el último piso hay una terraza para uso común con quincho, deck,
           cubierta verde con pasto, plantas y un árbol, diseñado para pequeños
           eventos sociales.
@@ -200,8 +194,7 @@ sections:
     secondImage: /images/unit-1.jpg
     number: 3
     subtitle: configuración a medida
-    text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
-      unidades de diseños unicos y custom.
+    text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas unidades de diseños únicos y custom.
     textLocation: right
   - type: imageGallery
     number: 3
@@ -245,8 +238,8 @@ sections:
         uf: 102
         description: Casa/Estudio. 2 ambientes.
         location: 1er piso.
-        surfaceOne: "44.31"
-        surfaceTwo: "12.50"
+        surfaceOne: "42.99"
+        surfaceTwo: "12.28"
       - available: true
         uf: 201
         description: Piso. 3 ambientes.

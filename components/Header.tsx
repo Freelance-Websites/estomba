@@ -94,6 +94,24 @@ const Header = ({ isScrolled }: HeaderProps) => {
                 height={16}
               />
             </a>
+            <span
+              className={`${isScrolled ? 'hidden' : 'font-sans text-white font-medium'}`}
+            >
+              +
+            </span>
+            <a
+              // href="https://instagram.com/@labaarquitectos"
+              // target="_blank"
+              // rel="noopener noreferrer"
+              className={`${isScrolled ? 'hidden' : 'transition ease-in-out duration-100 hover:opacity-80'}`}
+            >
+              <img
+                src="/images/logo-it.svg"
+                alt="Logo IT"
+                width={18}
+                height={16}
+              />
+            </a>
           </div>
           <button
             className="menu-open-btn sm:hidden"
