@@ -167,6 +167,8 @@ sections:
           eventos sociales.
   - type: boxedImage
     image: /images/unit-1.jpg
+  - type: boxedImage
+    image: /images/tres-ambientes.jpg
   - type: marquee
     text: unidades a medida •
   - type: text
