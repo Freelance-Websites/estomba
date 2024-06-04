@@ -237,8 +237,8 @@ sections:
           cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al
           contrafrente.                                                                                                                                                                                                                                                                                                
 
-          ---                                                                                                                                                                                                                                                                                                                                 
-
+          ---        
+                                                                                                                                                                                                                                                                                                                                   
           SEGUNDO Y CUARTO DISPONIBLES
         title: Tres ambientes con balcón aterrazado
       - image: /images/6to.jpg
@@ -246,8 +246,8 @@ sections:
           Tienen balcón-terraza y conforman el retiro del
           edificio.                                                                                                                                                          
 
-          ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-
+          ---                  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
           RESERVADO
         title: Sexto piso
       - image: /images/7m0.jpg
@@ -255,15 +255,15 @@ sections:
           Tienen balcón-terraza y conforman el retiro del
           edificio.                                                                                                                                                          
 
-          ---                                                                                                                                                          
-
+          ---                      
+                                                                                                                                             
           RESERVADO
         title: Séptimo Piso
       - image: /images/terraza.jpg
         text: Hay una terraza para uso común con quincho, deck, cubierta verde con
           pasto, plantas y un árbol, diseñado para pequeños eventos sociales.
         title: TERRAZA
-    textLocation: null
+    textLocation: below
   - type: title
     title: unidades
   - type: textAndImage
