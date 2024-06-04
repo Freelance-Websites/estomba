@@ -165,10 +165,9 @@ sections:
       - text: En el último piso hay una terraza para uso común con quincho, deck,
           cubierta verde con pasto, plantas y un árbol, diseñado para pequeños
           eventos sociales.
-  - type: boxedImage
-    image: /images/unit-1.jpg
-  - type: boxedImage
-    image: /images/tres-ambientes.jpg
+  - type: virtualStaging
+    firstImage: /images/tres-ambientes.jpg
+    secondImage: /images/unit-1.jpg
   - type: marquee
     text: unidades a medida •
   - type: text
