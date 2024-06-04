@@ -215,9 +215,9 @@ sections:
         text: >-
           Se organiza una casa en dúplex con jardín integrado.
 
-          La planta baja tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis para todas las unidades.
+          La planta baja tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis para todas las unidades.                                                                                                                                                                       
 
-          ---
+          ---                                                                                                                                                            
 
           DISPONIBLE
         title: PH con jardín
@@ -227,7 +227,7 @@ sections:
 
           La planta baja tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis para todas las unidades.
 
-          ---
+          ---                                                                                                                                                       
 
           DISPONIBLE
         title: PH con jardín
@@ -235,22 +235,28 @@ sections:
         text: >-
           Son pisos completos de tres ambientes, con estar-comedor,
           cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al
-          contrafrente.
+          contrafrente.                                                                                                                                                                                                                                                                                                
 
-          ---
+          ---                                                                                                                                                                                                                                                                                                                                 
 
           SEGUNDO Y CUARTO DISPONIBLES
         title: Tres ambientes con balcón aterrazado
       - image: /images/6to.jpg
-        text: |-
-          Tienen balcón-terraza y conforman el retiro del edificio.
-          ---
+        text: >-
+          Tienen balcón-terraza y conforman el retiro del
+          edificio.                                                                                                                                                          
+
+          ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
           RESERVADO
         title: Sexto piso
       - image: /images/7m0.jpg
-        text: |-
-          Tienen balcón-terraza y conforman el retiro del edificio.
-          ---
+        text: >-
+          Tienen balcón-terraza y conforman el retiro del
+          edificio.                                                                                                                                                          
+
+          ---                                                                                                                                                          
+
           RESERVADO
         title: Séptimo Piso
       - image: /images/terraza.jpg
