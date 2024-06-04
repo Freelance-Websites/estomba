@@ -2,13 +2,15 @@ import { GeistMono } from 'geist/font/mono';
 import { useState, useRef, useCallback } from 'react';
 import Flickity from 'react-flickity-component';
 import LightGallery from 'lightgallery/react';
+import ReactMarkdown from 'react-markdown';
 
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 
 interface ImageGalleryItem {
-  src: string;
+  image?: string;
+  src?: string;
   title: string;
   text: string;
 }
@@ -23,6 +25,16 @@ interface ImageGalleryProps {
 }
 
 const ImageGallery = ({ content, subtitle, number, text }: ImageGalleryProps) => {
+  // Loop through the content array and replace "image" property with "src"
+  const updatedContent = content.map((item: ImageGalleryItem) => {
+    return {
+      ...item,
+      src: item.image || item.src,
+    };
+  });
+
+  // Use the updated content in the component
+  // ...
   // Slider
   const flickityOptions = {
     autoPlay: 7000,
@@ -87,7 +99,7 @@ const ImageGallery = ({ content, subtitle, number, text }: ImageGalleryProps) =>
       }
       <LightGallery
         dynamic={true}
-        dynamicEl={content}
+        dynamicEl={updatedContent}
         download={false}
         counter={false}
         hideScrollbar={true}
@@ -104,7 +116,7 @@ const ImageGallery = ({ content, subtitle, number, text }: ImageGalleryProps) =>
           disableImagesLoaded={false}
           flickityRef={c => setFlktyRef(c)}
         >
-          {content && content.map((slide: ImageGalleryItem, index: Number) => 
+          {updatedContent && updatedContent.map((slide: ImageGalleryItem, index: Number) => 
             <div
               key={`${index}`}
               className="w-full mx-auto flex flex-col items-center"
@@ -126,9 +138,9 @@ const ImageGallery = ({ content, subtitle, number, text }: ImageGalleryProps) =>
                     {slide.title}
                   </h5>
                 }
-                <p>
+                <ReactMarkdown>
                   {slide.text}
-                </p>
+                </ReactMarkdown>
               </div>
             </div>
           )}
