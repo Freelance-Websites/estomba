@@ -211,7 +211,7 @@ sections:
     number: 3
     subtitle: planos
     content:
-      - image: /images/pb.jpg
+      - image: /images/building-2.jpg
         text: >-
           Se organiza una casa en dúplex con jardín integrado.
 
