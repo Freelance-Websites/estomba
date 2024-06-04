@@ -212,17 +212,52 @@ sections:
     subtitle: planos
     content:
       - image: /images/pb.jpg
-        text: Planta baja
+        text: >-
+          Se organiza una casa en dúplex con jardín integrado.
+
+          La planta baja tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis para todas las unidades.
+
+          ---
+
+          DISPONIBLE
+        title: PH con jardín
       - image: /images/1ero.jpg
-        text: Primer piso
+        text: >-
+          Se organiza una casa en dúplex con jardín integrado.
+
+          La planta baja tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis para todas las unidades.
+
+          ---
+
+          DISPONIBLE
+        title: PH con jardín
       - image: /images/ptipo.jpg
-        text: Planta tipo
+        text: >-
+          Son pisos completos de tres ambientes, con estar-comedor,
+          cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al
+          contrafrente.
+
+          ---
+
+          SEGUNDO Y CUARTO DISPONIBLES
+        title: Tres ambientes con balcón aterrazado
       - image: /images/6to.jpg
-        text: Sexto piso
+        text: |-
+          Tienen balcón-terraza y conforman el retiro del edificio.
+          ---
+          RESERVADO
+        title: Sexto piso
       - image: /images/7m0.jpg
-        text: Septimo Piso
+        text: |-
+          Tienen balcón-terraza y conforman el retiro del edificio.
+          ---
+          RESERVADO
+        title: Séptimo Piso
       - image: /images/terraza.jpg
-        text: Terraza
+        text: Hay una terraza para uso común con quincho, deck, cubierta verde con
+          pasto, plantas y un árbol, diseñado para pequeños eventos sociales.
+        title: TERRAZA
+    textLocation: below
   - type: title
     title: unidades
   - type: textAndImage
