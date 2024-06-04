@@ -202,9 +202,6 @@ sections:
   - type: phrase
     text: múltiples opciones de configuración y personalización
   - type: virtualStaging
-    firstImage: /images/iskla.jpg
-    secondImage: /images/mesa-1.jpg
-  - type: virtualStaging
     firstImage: /images/mesa.jpg
     secondImage: /images/isla.jpg
     number: 3
@@ -212,6 +209,9 @@ sections:
     text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
       unidades de diseños únicos y custom.
     textLocation: right
+  - type: virtualStaging
+    firstImage: /images/iskla.jpg
+    secondImage: /images/mesa-1.jpg
   - type: imageGallery
     number: 3
     subtitle: planos
