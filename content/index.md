@@ -167,6 +167,8 @@ sections:
           eventos sociales.
   - type: boxedImage
     image: /images/unit-1.jpg
+  - type: boxedImage
+    image: /images/tres-ambientes.jpg
   - type: marquee
     text: unidades a medida •
   - type: text
@@ -207,6 +209,9 @@ sections:
     text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
       unidades de diseños únicos y custom.
     textLocation: right
+  - type: virtualStaging
+    firstImage: /images/iskla.jpg
+    secondImage: /images/mesa-1.jpg
   - type: imageGallery
     number: 3
     subtitle: planos
