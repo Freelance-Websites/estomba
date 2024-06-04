@@ -221,7 +221,7 @@ sections:
 
           DISPONIBLE
         title: PH con jardín
-      - image: /images/1ero.jpg
+      - image: file:///C:/Users/Usuario/Downloads/planos%20ig%20estomba/1ero.jpg
         text: >-
           Se organiza una casa en dúplex con jardín integrado.
 
