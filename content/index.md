@@ -9,8 +9,8 @@ sections:
         subtitle: edificio
         text: El lote se sitúa en un barrio tradicionalmente de baja densidad, en el
           cual predominan las viviendas unifamiliares, algunos edificios de
-          escala baja, y a continuación, sin rejas, la plaza 25 de agosto que ocupa una
-          manzana.
+          escala baja, y a continuación, sin rejas, la plaza 25 de agosto que
+          ocupa una manzana.
       - text: En el frente, una grilla de hormigón modula la fachada, filtra las
           visuales y contiene los espacios semi cubiertos, cuyo desarrollo es al
           interior de la línea municipal.
@@ -19,12 +19,12 @@ sections:
           público, y por otro lado para responder a la necesidad de expansión
           semicubierta.
       - text: En los últimos pisos, los retiros obligatorios organizan balcones y una
-          terraza para uso común con quincho, deck y terraza verde, pasto, plantas y un
-          árbol de sombra.
+          terraza para uso común con quincho, deck y terraza verde, pasto,
+          plantas y un árbol de sombra.
   - type: boxedImage
     image: /images/main-image.jpg
   - type: marquee
-    text: pisos • dúplex • terrazas • 
+    text: pisos • dúplex • terrazas •
   - type: textAndImage
     number: 1
     subtitle: una grilla de hormigón modula la fachada y filtra las visuales
@@ -75,12 +75,14 @@ sections:
       - text: Decks con lugar para muebles de exteriores y cantero lineal para pantalla
           verde con plantas autóctonas, enredaderas y mariposas.
         title: balcones aterrazados y verde
-      - text: Terraza común arbolada con jardín y propuesta de paisaje. Deck solarium con parrilla en terraza.
+      - text: Terraza común arbolada con jardín y propuesta de paisaje. Deck solarium
+          con parrilla en terraza.
         title: amenities
       - text: Prestaciones individuales. Bajas expensas sin vivienda de encargado. Video
           vigilancia y control de accesos. Bicicleteros en planta baja.
         title: servicios eco
-      - text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas unidades de diseños únicos y custom.
+      - text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
+          unidades de diseños únicos y custom.
         title: configuración a medida
     image: /images/infographic.jpg
   - type: title
@@ -90,47 +92,48 @@ sections:
       - text: La zona es de fácil acceso, tiene cercanía al subte B, al ferrocarril
           Urquiza, y a avenidas principales como Alvarez Thomas, Elcano,
           Triunvirato, Los Incas.
-      - text: La proximidad con el acceso norte y la general paz facilitan la conectividad y movilidad en vehículo particular.
+      - text: La proximidad con el acceso norte y la general paz facilitan la
+          conectividad y movilidad en vehículo particular.
   - type: map
     interestPoints:
       - title: L'épi Boulangerie
-        coordinates: "-34.58144177258623, -58.466828649187335"
+        coordinates: -34.58144177258623, -58.466828649187335
         location: top
         type: point
       - title: RS Esquina
-        coordinates: "-34.581649641783386, -58.464662589527606"
+        coordinates: -34.581649641783386, -58.464662589527606
         location: left
         type: point
       - title: La Kitchen
-        coordinates: "-34.58176447389863, -58.46142248128788"
+        coordinates: -34.58176447389863, -58.46142248128788
         location: top
         type: point
       - title: Almacén La Siesta
-        coordinates: "-34.58173537555355, -58.46035703185715"
+        coordinates: -34.58173537555355, -58.46035703185715
         location: bottom
         type: point
       - title: Subte B – Estación Tronador
-        coordinates: "-34.58415354156799, -58.46648532645994"
+        coordinates: -34.58415354156799, -58.46648532645994
         location: top
         type: transport
       - title: Plaza 25 de Agosto
-        coordinates: "-34.58003054340053, -58.4619556283066"
+        coordinates: -34.58003054340053, -58.4619556283066
         location: top
         type: square
       - title: Plaza San Miguel de Garicoits
-        coordinates: "-34.57782228944845, -58.458288730470386"
+        coordinates: -34.57782228944845, -58.458288730470386
         location: left
         type: square
       - title: La Mezzeta
-        coordinates: "-34.57799483684215, -58.46085105633195"
+        coordinates: -34.57799483684215, -58.46085105633195
         location: left
         type: point
       - title: Les Croquants
-        coordinates: "-34.57724839888193, -58.456259543505006"
+        coordinates: -34.57724839888193, -58.456259543505006
         location: right
         type: point
       - title: estomba 1046
-        coordinates: "-34.58123860717787, -58.46498328952765"
+        coordinates: -34.58123860717787, -58.46498328952765
         location: left
         type: building
     content:
@@ -150,15 +153,22 @@ sections:
     content:
       - number: 3
         subtitle: unidades
-        text: El edificio cuenta con 8 departamentos. La planta baja tiene al frente dos cocheras (unidades funcionales), acceso peatonal y espacio guarda bicicletas para todas las unidades.
-      - text: En la planta baja y el primer piso se organiza una unidad tipo casa en dúplex con jardín integrado y en el primer piso un departamento de dos ambientes con balcón y cocina integrados. Del segundo al séptimo pisos se organizan pisos completos de tres ambientes, con estar-comedor, cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al contrafrente.
+        text: El edificio cuenta con 8 departamentos. La planta baja tiene al frente dos
+          cocheras (unidades funcionales), acceso peatonal y espacio guarda
+          bicicletas para todas las unidades.
+      - text: En la planta baja y el primer piso se organiza una unidad tipo casa en
+          dúplex con jardín integrado y en el primer piso un departamento de dos
+          ambientes con balcón y cocina integrados. Del segundo al séptimo pisos
+          se organizan pisos completos de tres ambientes, con estar-comedor,
+          cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al
+          contrafrente.
       - text: En el último piso hay una terraza para uso común con quincho, deck,
           cubierta verde con pasto, plantas y un árbol, diseñado para pequeños
           eventos sociales.
   - type: boxedImage
     image: /images/unit-1.jpg
   - type: marquee
-    text: unidades a medida • 
+    text: unidades a medida •
   - type: text
     content:
       - text: Los departamentos están equipados con calefacción individual por piso
@@ -194,32 +204,39 @@ sections:
     secondImage: /images/unit-1.jpg
     number: 3
     subtitle: configuración a medida
-    text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas unidades de diseños únicos y custom.
+    text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
+      unidades de diseños únicos y custom.
     textLocation: right
   - type: imageGallery
     number: 3
     subtitle: planos
     content:
       - src: /images/ptipo.jpg
-        text: Planta tipo
+        text: Planta baja
+        image: /images/pb.jpg
       - src: /images/ptipo-det.jpg
-        text: Planta tipo – Detalle
+        text: Primer piso
+        image: /images/1ero.jpg
       - src: /images/pterraza.jpg
-        text: Planta terraza
+        text: Planta tipo
+        image: /images/ptipo.jpg
       - src: /images/pterraza-det.jpg
-        text: Planta terraza – Detalle
+        text: Sexto piso
+        image: /images/6to.jpg
       - src: /images/dos-ambientes.jpg
-        text: Dos ambientes
+        text: Séptimo piso
+        image: /images/7m0.jpg
       - src: /images/p6to.jpg
-        text: Piso sexto
-      - src: /images/p7mo.jpg
-        text: Piso 7mo
+        text: Terraza
+        image: /images/terraza.jpg
   - type: title
     title: unidades
   - type: textAndImage
     number: 3
     subtitle: distribucion
-    text: PH con jardín y árboles. Estudio de 2 ambientes. Pisos de 3 ambientes con balcones aterrazados. Duplex con balcón y terraza. Terraza con quincho, cubierta verde y solarium.
+    text: PH con jardín y árboles. Estudio de 2 ambientes. Pisos de 3 ambientes con
+      balcones aterrazados. Duplex con balcón y terraza. Terraza con quincho,
+      cubierta verde y solarium.
     proportion: vertical
     align: right
     image:
