@@ -202,6 +202,9 @@ sections:
   - type: phrase
     text: múltiples opciones de configuración y personalización
   - type: virtualStaging
+    firstImage: /images/iskla.jpg
+    secondImage: /images/mesa-1.jpg
+  - type: virtualStaging
     firstImage: /images/mesa.jpg
     secondImage: /images/isla.jpg
     number: 3
