@@ -211,24 +211,18 @@ sections:
     number: 3
     subtitle: planos
     content:
-      - src: /images/ptipo.jpg
+      - image: /images/pb.jpg
         text: Planta baja
-        image: /images/pb.jpg
-      - src: /images/ptipo-det.jpg
+      - image: /images/1ero.jpg
         text: Primer piso
-        image: /images/1ero.jpg
-      - src: /images/pterraza.jpg
+      - image: /images/ptipo.jpg
         text: Planta tipo
-        image: /images/ptipo.jpg
-      - src: /images/pterraza-det.jpg
+      - image: /images/6to.jpg
         text: Sexto piso
-        image: /images/6to.jpg
-      - src: /images/dos-ambientes.jpg
-        text: Séptimo piso
-        image: /images/7m0.jpg
-      - src: /images/p6to.jpg
+      - image: /images/7m0.jpg
+        text: Septimo Piso
+      - image: /images/terraza.jpg
         text: Terraza
-        image: /images/terraza.jpg
   - type: title
     title: unidades
   - type: textAndImage
