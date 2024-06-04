@@ -206,7 +206,7 @@ collections:
                     fields:
                       - {label: Imagen, name: src, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
                       - {label: Título, name: title, widget: string, required: false}
-                      - {label: Texto, name: text, widget: text}
+                      - {label: Texto, name: text, widget: markdown}
               - label: "Listado de unidades"
                 name: "units"
                 fields:
