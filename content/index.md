@@ -211,7 +211,7 @@ sections:
     number: 3
     subtitle: planos
     content:
-      - image: /images/pb.jpg
+      - src: /images/pb.jpg
         text: >-
           Se organiza una casa en dúplex con jardín integrado.
 
@@ -221,7 +221,7 @@ sections:
 
           DISPONIBLE
         title: PH con jardín
-      - image: /images/1ero.jpg
+      - src: /images/1ero.jpg
         text: >-
           Se organiza una casa en dúplex con jardín integrado.
 
@@ -231,7 +231,7 @@ sections:
 
           DISPONIBLE
         title: PH con jardín
-      - image: /images/ptipo.jpg
+      - src: /images/ptipo.jpg
         text: >-
           Son pisos completos de tres ambientes, con estar-comedor,
           cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al
@@ -241,7 +241,7 @@ sections:
                                                                                                                                                                                                                                                                                                                                    
           SEGUNDO Y CUARTO DISPONIBLES
         title: Tres ambientes con balcón aterrazado
-      - image: /images/6to.jpg
+      - src: /images/6to.jpg
         text: >-
           Tienen balcón-terraza y conforman el retiro del
           edificio.                                                                                                                                                          
@@ -250,7 +250,7 @@ sections:
                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
           RESERVADO
         title: Sexto piso
-      - image: /images/7m0.jpg
+      - src: /images/7m0.jpg
         text: >-
           Tienen balcón-terraza y conforman el retiro del
           edificio.                                                                                                                                                          
@@ -259,7 +259,7 @@ sections:
                                                                                                                                              
           RESERVADO
         title: Séptimo Piso
-      - image: /images/terraza.jpg
+      - src: /images/terraza.jpg
         text: Hay una terraza para uso común con quincho, deck, cubierta verde con
           pasto, plantas y un árbol, diseñado para pequeños eventos sociales.
         title: Terraza

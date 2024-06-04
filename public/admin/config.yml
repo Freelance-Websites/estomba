@@ -204,7 +204,7 @@ collections:
                     summary: '{{fields.title}}'
                     widget: "list"
                     fields:
-                      - {label: Imagen, name: image, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
+                      - {label: Imagen, name: src, widget: image, hint: Tamaño recomendado 2200x1400 o superior}
                       - {label: Título, name: title, widget: string, required: false}
                       - {label: Texto, name: text, widget: text}
               - label: "Listado de unidades"
