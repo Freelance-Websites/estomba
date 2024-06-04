@@ -257,7 +257,7 @@ sections:
         text: Hay una terraza para uso común con quincho, deck, cubierta verde con
           pasto, plantas y un árbol, diseñado para pequeños eventos sociales.
         title: TERRAZA
-    textLocation: below
+    textLocation: null
   - type: title
     title: unidades
   - type: textAndImage
