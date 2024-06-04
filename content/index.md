@@ -200,8 +200,8 @@ sections:
   - type: phrase
     text: múltiples opciones de configuración y personalización
   - type: virtualStaging
-    firstImage: /images/main-image.jpg
-    secondImage: /images/unit-1.jpg
+    firstImage: /images/mesa.jpg
+    secondImage: /images/isla.jpg
     number: 3
     subtitle: configuración a medida
     text: Posibilidad de elección de terminaciones a gusto de cada inversor. Pocas
