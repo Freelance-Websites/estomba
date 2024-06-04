@@ -211,7 +211,7 @@ sections:
     number: 3
     subtitle: planos
     content:
-      - image: /images/building-2.jpg
+      - image: /images/pb.jpg
         text: >-
           Se organiza una casa en dúplex con jardín integrado.
 
@@ -221,7 +221,7 @@ sections:
 
           DISPONIBLE
         title: PH con jardín
-      - image: file:///C:/Users/Usuario/Downloads/planos%20ig%20estomba/1ero.jpg
+      - image: /images/1ero.jpg
         text: >-
           Se organiza una casa en dúplex con jardín integrado.
 
