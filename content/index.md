@@ -269,6 +269,20 @@ sections:
           pasto, plantas y un árbol, diseñado para pequeños eventos sociales.
         title: Terraza
     textLocation: below
+  - type: imageGallery
+    number: 3
+    subtitle: planos
+    content:
+      - image: /images/pb.jpg
+        title: PH con jardín
+        text: >-
+          Se organiza una casa en dúplex con jardín integrado.
+
+          La planta baja tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis para todas las unidades.                                                                                                                                                                       
+
+          ---                                                                                                                                                            
+
+          DISPONIBLE
   - type: title
     title: unidades
   - type: textAndImage
