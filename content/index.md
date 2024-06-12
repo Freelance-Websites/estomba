@@ -295,8 +295,8 @@ sections:
     proportion: vertical
     align: right
     image:
-      - /images/03-1.jpg
       - /images/03-2.jpg
+      - /images/03-1.jpg
   - type: units
     content:
       - available: true
