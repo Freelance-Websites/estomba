@@ -218,69 +218,71 @@ sections:
       - image: /images/pb.jpg
         text: >-
           Tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis
-          para todas las
-          unidades.                                                                                                                                                                       
+          para todas las unidades. También se organiza un PH con jardín,
+          parrilla y vegetación
+          autóctona.                                                                                                                                                                    
 
-          ---                                                                                                                                                            
+
+          - - -
+
 
           DISPONIBLE
         title: Planta baja
         src: /images/pb.jpg
       - image: /images/1ero.jpg
         text: >-
-          Se organiza una casa en dúplex con jardín integrado.
+          Una unidad tipo casa con jardín en planta baja. Al lado, un dos
+          ambientes con cocina integrada y balcón aterrazado.
 
-          La planta baja tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis para todas las unidades.
 
-          ---                                                                                                                                                       
+          - - -
+
 
           DISPONIBLE
         title: Primer piso
         src: /images/1ero.jpg
-      - image: /images/ph-y-primero.jpg
-        text: >-
-          Se organiza una casa en dúplex con jardín integrado.
-
-          La planta baja tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis para todas las unidades.                                                                                                                                                                       
-
-          ---                                                                                                                                                            
-
-          DISPONIBLE
-        src: /images/ph-y-primero.jpg
       - image: /images/ptipo.jpg
         text: >-
-          Son pisos completos de tres ambientes, con estar-comedor,
-          cocina-lavadero y balcón aterrazado a la calle, y dos dormitorios al
-          contrafrente.                                                                                                                                                                                                                                                                                                
+          Son pisos completos, con estar-comedor, cocina-lavadero y balcón
+          aterrazado a la calle, una suite con vestidor, otro dormitorio y un
+          baño con
+          ducha.                                                                                                                                                                                          
 
-          ---        
-                                                                                                                                                                                                                                                                                                                                   
+
+          - - -
+
+
           SEGUNDO Y CUARTO DISPONIBLES
         title: Tres ambientes con balcón aterrazado
         src: /images/ptipo.jpg
       - image: /images/6to.jpg
         text: >-
-          Tienen balcón-terraza y conforman el retiro del
+          Es una unidad con balcón-terraza y conforman el retiro del
           edificio.                                                                                                                                                          
 
-          ---                  
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+          - - -
+
+
           RESERVADO
         title: Sexto piso
         src: /images/6to.jpg
       - image: /images/7m0.jpg
         text: >-
-          Tienen balcón-terraza y conforman el retiro del
-          edificio.                                                                                                                                                          
+          \
 
-          ---                      
-                                                                                                                                             
+          Es una unidad con balcón corrido y terraza privada. Es el segundo retiro del edificio.                                                                                                                                                   
+
+
+          - - -
+
+
           RESERVADO
         title: Séptimo Piso
         src: /images/7m0.jpg
       - image: /images/terraza.jpg
-        text: Hay una terraza para uso común con quincho, deck, cubierta verde con
-          pasto, plantas y un árbol, diseñado para pequeños eventos sociales.
+        text: Es para uso común con quincho, deck, ducha, cubierta verde con pasto,
+          plantas y un árbol, diseñado para pequeños eventos sociales.
         title: Terraza
         src: /images/terraza.jpg
     textLocation: below
