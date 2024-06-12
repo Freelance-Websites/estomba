@@ -260,7 +260,7 @@ sections:
         src: /images/ptipo.jpg
       - image: /images/6to.jpg
         text: >-
-          Es una unidad con balcón-terraza y conforman el retiro del
+          Es una unidad con balcón-terraza y conforma el retiro del
           edificio.                                                                                                                                                          
 
 
