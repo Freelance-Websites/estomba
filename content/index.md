@@ -44,7 +44,7 @@ sections:
     text: Los servicios comunes y circulaciones fueron proyectados priorizando la
       economía de recursos y el fácil mantenimiento de lo construído.
     image:
-      - /images/building-2.jpg
+      - /images/caminandio-img.jpg
     proportion: square
     align: left
   - type: stats
