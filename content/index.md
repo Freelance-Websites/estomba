@@ -1,7 +1,7 @@
 ---
 sections:
   - type: hero
-    image: /images/vídeo-sin-título-‐-hecho-con-clipchamp-2-.mp4
+    image: /images/estoma-720-‐-hecho-con-clipchamp.mp4
     title: estomba
   - type: text
     content:
