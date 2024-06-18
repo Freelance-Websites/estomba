@@ -61,7 +61,7 @@ sections:
         description: Dúplex
   - type: imageGrid
     content:
-      - image: /images/grid-1.jpg
+      - image: /images/0-portada.jpg
         proportion: vertical
       - image: /images/grid-2.jpg
         proportion: square
