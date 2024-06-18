@@ -167,9 +167,9 @@ sections:
           eventos sociales.
   - type: imageGrid
     content:
-      - image: /images/unit-1.jpg
-        proportion: horizontal
       - image: /images/tres-ambientes.jpg
+        proportion: horizontal
+      - image: /images/pb-1.jpg
         proportion: horizontal
   - type: marquee
     text: unidades a medida •
