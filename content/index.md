@@ -63,7 +63,7 @@ sections:
     content:
       - image: /images/0-portada.jpg
         proportion: vertical
-      - image: /images/grid-2.jpg
+      - image: /images/terrazamimg.jpg
         proportion: square
       - image: /images/grid-3.jpg
         proportion: horizontal
