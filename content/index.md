@@ -1,7 +1,7 @@
 ---
 sections:
   - type: hero
-    image: /images/estoma-720-‐-hecho-con-clipchamp.mp4
+    image: /images/estoma-720-‐-hecho-con-clipchamp-1-.mp4
     title: estomba
   - type: text
     content:
@@ -221,10 +221,9 @@ sections:
     content:
       - image: /images/pb.jpg
         text: >-
-          Tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis
-          para todas las unidades. También se organiza un PH con jardín,
-          parrilla y vegetación
-          autóctona.                                                                                                                                                                    
+          
+
+          Tiene al frente dos cocheras, acceso peatonal y espacio guarda bicis para todas las unidades. También se organiza un PH con jardín, parrilla y vegetación autóctona.                                                                                                                                                                    
 
 
           - - -
@@ -235,8 +234,9 @@ sections:
         src: /images/pb.jpg
       - image: /images/1ero.jpg
         text: >-
-          Una unidad tipo casa con jardín en planta baja. Al lado, un dos
-          ambientes con cocina integrada y balcón aterrazado.
+          
+
+          Una unidad tipo casa con jardín en planta baja. Al lado, un dos ambientes con cocina integrada y balcón aterrazado.
 
 
           - - -
@@ -247,10 +247,9 @@ sections:
         src: /images/1ero.jpg
       - image: /images/ptipo.jpg
         text: >-
-          Son pisos completos, con estar-comedor, cocina-lavadero y balcón
-          aterrazado a la calle, una suite con vestidor, otro dormitorio y un
-          baño con
-          ducha.                                                                                                                                                                                          
+          
+
+          Son pisos completos, con estar-comedor, cocina-lavadero y balcón aterrazado a la calle, una suite con vestidor, otro dormitorio y un baño con ducha.                                                                                                                                                                                          
 
 
           - - -
@@ -261,8 +260,9 @@ sections:
         src: /images/ptipo.jpg
       - image: /images/6to.jpg
         text: >-
-          Es una unidad con balcón-terraza y conforma el retiro del
-          edificio.                                                                                                                                                          
+          
+
+          Es una unidad con balcón-terraza y conforma el retiro del edificio.                                                                                                                                                          
 
 
           - - -
@@ -285,8 +285,10 @@ sections:
         title: Séptimo Piso
         src: /images/7m0.jpg
       - image: /images/terraza.jpg
-        text: Es para uso común con quincho, deck, ducha, cubierta verde con pasto,
-          plantas y un árbol, diseñado para pequeños eventos sociales.
+        text: >-
+          
+
+          Es para uso común con quincho, deck, ducha, cubierta verde con pasto, plantas y un árbol, diseñado para pequeños eventos sociales.
         title: Terraza
         src: /images/terraza.jpg
     textLocation: below
