@@ -169,8 +169,9 @@ sections:
     content:
       - image: /images/tres-ambientes.jpg
         proportion: horizontal
-      - image: /images/pb-1.jpg
-        proportion: horizontal
+  - type: virtualStaging
+    firstImage: /images/pb-1.jpg
+    secondImage: /images/pb-2.jpg
   - type: marquee
     text: unidades a medida •
   - type: text
