@@ -22,7 +22,7 @@ sections:
           terraza para uso común con quincho, deck y terraza verde, pasto,
           plantas y un árbol de sombra.
   - type: boxedImage
-    image: /images/main-image.jpg
+    image: /images/grid-1.jpg
   - type: marquee
     text: pisos • dúplex • terrazas •
   - type: textAndImage
