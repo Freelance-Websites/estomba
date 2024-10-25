@@ -32,7 +32,7 @@ const Contact = ({ availableUnits, selectedUnit }: OptionProps) => {
     const formData = new FormData(myForm);
     const formDataString = new URLSearchParams(formData as any).toString();
 
-    fetch("/", {
+    fetch("/__forms.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: formDataString,
