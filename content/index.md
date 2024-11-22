@@ -307,7 +307,7 @@ sections:
       - /images/03-1.jpg
   - type: units
     content:
-      - available: true
+      - available: false
         uf: 101
         description: PH con jardín. 3 ambientes.
         location: PB/1er piso.
