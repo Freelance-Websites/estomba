@@ -309,7 +309,7 @@ sections:
     content:
       - available: false
         uf: 101
-        description: PH con jardín. 3 ambientes
+        description: PH con jardín. 3 ambientes.
         location: PB/1er piso.
         surfaceOne: "76.70"
         surfaceTwo: "2.15"
