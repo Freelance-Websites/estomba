@@ -320,7 +320,7 @@ sections:
         location: 1er piso.
         surfaceOne: "42.99"
         surfaceTwo: "12.28"
-      - available: false
+      - available: true
         uf: 201
         description: Piso. 3 ambientes.
         location: 2do piso.
